@@ -1,0 +1,20 @@
+baseurl:     /
+server:      true
+auto:        true
+lsi:         false
+server_port: 4000
+pygments:    true
+markdown:    redcloth
+permalink:   /:title
+
+title:            DolphinBoy.me
+url:              http://dolphinboy.me
+feed:             /atom.xml
+author:
+    name:         DolphinBoy
+    twitter:      twitter.com/3kqing
+description:      "DolphinBoy\'s Blog"
+author_info:      <a href="http://dolphinboy.me/about">DolphinBoy</a>
+
+copyright:
+    - Design by <a href="http://beiyuu.com/about" title="BeiYuu" target="_blank">BeiYuu</a> &copy; 2013
