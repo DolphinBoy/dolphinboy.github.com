@@ -13,8 +13,9 @@ feed:             /atom.xml
 author:
     name:         DolphinBoy
     twitter:      twitter.com/3kqing
+    weibo:        weibo.com/longxinanlan
 description:      "DolphinBoy\'s Blog"
 author_info:      <a href="http://dolphinboy.me/about">DolphinBoy</a>
 
 copyright:
-    - Design by <a href="http://beiyuu.com/about" title="BeiYuu" target="_blank">BeiYuu</a> &copy; 2013
+    - Design by <a href="http://dolphinboy.me/about" title="DolphinBoy" target="_blank">DolphinBoy</a>. &copy; 2013

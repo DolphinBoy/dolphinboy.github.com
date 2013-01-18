@@ -22,11 +22,13 @@
         </header>
 		<hr>
         <div id="main_content">
-         	<img src="picture/waitingforyou.png" alt="Waiting for you.">
+         	<img src="pictures/waitingforyou.png" alt="Waiting for you.">
         </div>
 
         <footer>
-          Design by <a href="http://dolphinboy.me/">DolphinBoy</a>. Power by <a href="http://pages.github.com">GitHub Pages</a>. copyright 2013
+        	{% for line in site.copyright %}
+        		<p>{{ line }}</p>
+        	{% endfor %}
         </footer>
 
                   <script type="text/javascript">
