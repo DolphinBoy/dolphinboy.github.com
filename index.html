@@ -4,7 +4,8 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/global.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/default.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
     <!--[if lt IE 9]>
@@ -17,8 +18,14 @@
     <div id="container">
       <div class="inner">
         <header>
-          <h1>DolphinBoy</h1>
-          <h2>This is it.</h2>
+            <h1>DolphinBoy</h1>
+            <h2>This is it.</h2>
+            <div class="nav right">
+            	<a href="/blog">Blog</a>
+            	<a href="/page">Page</a>
+           		<a href="/about">About</a>
+            </div>
+          
         </header>
 		<hr>
         <div id="main_content">
@@ -26,9 +33,7 @@
         </div>
 
         <footer>
-        	{% for line in site.copyright %}
-        		<p>{{ line }}</p>
-        	{% endfor %}
+        	Design by <a href="http://dolphinboy.me/about" title="DolphinBoy" target="_blank">DolphinBoy</a>. &copy; 2013
         </footer>
 
                   <script type="text/javascript">
