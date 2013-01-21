@@ -8,10 +8,11 @@
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="generator" content="Jekyll" />
     <meta name="author" content="{{ site.author.name }}" />
-    <meta name="description" content="{{ post.keywords }}" />
+    <meta name="description" content="{% if page.keywords %}{{ page.keywords }} | {% endif %}{{ site.description }}" />
     <meta name="robots" content="all" />
     <meta http-equiv="Window-target" content="_top">
     <link rel="stylesheet" href="/css/default.css" type="text/css" />
+    <link rel="stylesheet" href="/css/pygment_trac.css" />
     <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 </head>

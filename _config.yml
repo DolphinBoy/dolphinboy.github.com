@@ -12,6 +12,7 @@ url:              http://dolphinboy.me
 feed:             /atom.xml
 author:
     name:         DolphinBoy
+    email:        dolphinboyo@gmail.com
     twitter:      twitter.com/3kqing
     weibo:        weibo.com/longxinanlan
 description:      "DolphinBoy,Blog"

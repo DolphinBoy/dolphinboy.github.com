@@ -1,7 +1,7 @@
 ---
 layout: page
-title:
-description: 博客列表,DolphinBoy
+title: 博文列表
+description:  博文列表,DolphinBoy
 keywords:
 ---
 
