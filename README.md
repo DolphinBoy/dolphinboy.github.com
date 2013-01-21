@@ -1,4 +1,4 @@
-dolphinboy.github.com
+[DolphinBoy](dolphinboy.me)
 =====================
 
-This is DolphinBoy's blog!
+This is DolphinBoy's Blog!
