@@ -1,27 +1,30 @@
 ---
 layout:           default
 ---
-<div id="head">
-    <div class='logo left'>
-        <a href="/" title="Home">BeiYuu.com</a>
+<body>
+    <div id="container">
+      <div class="inner">
+        <header>
+            <div class="nav right">
+                <a href="/index">Home</a>
+                <a href="/blog">Blog</a>
+                <a href="/page">Page</a>
+                <a href="/about">About</a>
+            </div>
+            <h1>DolphinBoy</h1>
+            <h2>人生中，最大的敌人就是自己，人的一生就是和自己抗争的过程...</h2>
+            <h3>——龙</h3>
+        </header>
+        <hr>
+        <div id="main_content">
+            
+        </div>
+
+        <footer>
+            {% for line in site.copyright %}
+                {{ line }}
+            {% endfor %}
+        </footer>
+      </div>
     </div>
-    <div id="header">
-        <div class="nav right">
-            <a href="/" title="Thoughts On Something">Blog</a>
-            <a href="/project" title="Projects Ongoing">Project</a>
-            <!--<a href="/wiki" title="Wiki" >Wiki</a>-->
-            <a href="/about" title="About BeiYuu" >About</a>
-            <a href="{{ site.feed }}" rel="feed" title="Subscribes The Feed" target="_blank">RSS</a>
-        </div><!-- .nav -->
-    </div><!-- #header -->
-</div><!-- #head -->
-<div id="content">
-    {{ content }}
-</div><!-- #content --> 
-<div id="footer">
-    <div class="copyright right">
-        {% for line in site.copyright %}
-        <p>{{ line }}</p>
-        {% endfor %}
-    </div>
-</div><!-- #footer -->
+</body>

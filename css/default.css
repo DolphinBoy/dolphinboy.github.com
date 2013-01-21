@@ -313,7 +313,7 @@ header {
   padding-bottom: 0px;
 }
 header h1 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif; font-weight: 900;
+  font-family: "Helvetica", "Arial", "serif"; font-weight: 900;
   /*text-shadow: 1px 1px 0 #fff,-1px -1px 0 #fff;字体外高亮*/
   letter-spacing: -1px;
   font-size: 48px;
@@ -327,7 +327,7 @@ header h2 {
   letter-spacing: -1px;
   font-size: 24px;
   text-align: right;
-  color: #eee;/*color: #aaa;*/
+  color: #ccc;/*color: #aaa;*/
   font-weight: normal;
   line-height: 1.3;
 }
