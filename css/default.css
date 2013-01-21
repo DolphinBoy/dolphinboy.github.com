@@ -1,53 +1,51 @@
-@charset "utf-8"
-/*
-  Author:      DolphinBoy
-  Contact:     dolphinboy.me
-  License:     MIT
+@charset "utf-8";
+/* -------------------------------------------------
+ * 重置 css
+ * -------------------------------------------------
 */
-
-/***********Revise Settings**********/
-/* 清除所有标签的默认边距，防止在不同浏览器中展现不同的样式 */
-*｛
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
+html{
+    height:100%;
+  -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
-
-html, body, div, span, object, iframe,
+body{
+  height:100%;
+}
+html>body { /* for IE/Win */
+  font-size:10px;
+}
+/* 去除默认边框和边距 */
+/*fieldset,img,a img{border:none;}*/
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, i,
+b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, 
+article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
-menu, nav, output, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { /* 清除所有标签的默认边距 */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
 /* 要注意表单元素并不继续父级 font 的问题 */
 button,input,select,textarea{font-size:12px/1.5;}
 input,select,textarea{font-size:100%;}
+
+input, select, label {vertical-align:middle;}
 /* 去掉各Table  cell 的边距并让其边重合 */
 table{border-collapse:collapse;border-spacing:0;}
 /* IE bug fixed: th 不继承 text-align*/
 th{text-align:inherit;}
-/* 去除默认边框 */
-fieldset,img,a img{border:0;}
 /* ie6 7 8(q) bug 显示为行内表现 */
 iframe{display:block;}
 /* 去掉 firefox 下此元素的边框 */
@@ -55,8 +53,6 @@ abbr,acronym{border:0;font-variant:normal;}
 /* 一致的 del 样式 */
 del{text-decoration:line-through;}
 address,caption,cite,code,dfn,em,th,var {font-style:normal;font-weight:500;}
-/* 去掉列表前的标识, li 会继承 */
-ol,ul {list-style:none;}
 /* 对齐是排版最重要的因素, 别让什么都居中 */
 caption,th{text-align:left;}
 /* 来自yahoo, 让标题都自定义, 适应多个系统应用 */
@@ -68,11 +64,58 @@ q:before,q:after {content:'';content: none;}
 sup{vertical-align:text-top;}
 sub{vertical-align:text-bottom;}
 
+a {text-decoration:none;outline:none;}
+
+p {font-weight: 300;margin-bottom: 20px;line-height: 25px;}
+p a {font-weight: 400;}
+
+dl dt {color: #303030;}
+dl{ margin-bottom: 18px;}
+dt{font-weight: bold;}
+dd{margin:0 0 0 9px;padding:0;}
+
+ul li {list-style: disc inside;padding-left: 20px;}
+ol li {list-style: decimal inside;padding-left: 3px;}
+ul, ol, dl {margin-bottom: 20px;}
+ul ul, ul ol,ol ol, ol ul {margin-bottom: 0;}
+ul.nostyle{list-style: none outside none;}
+ul.nostyle li{margin-left: 0;}
+ul.inline-style{list-style: none outside none;margin-bottom:0;}
+ul.inline-style li{float:left;display:inline;margin-left:0;}
+
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ /* 清理浮动 */
+.clearfix:before {content:"";display:table;}
+.clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;overflow:hidden;}
+.clearfix{zoom:1; /* for IE6 IE7 */}
+/* 隐藏, 通常用来与 JS 配合 */
+body .hide{display:none;}
+/* 设置内联, 减少浮动带来的bug */
+.left,.right{display:inline;}
+.left{float:left;}
+.right{float:right;}
+
+/* MISC */
+.clearfix:after {
+  clear: both;
+  content: '.';
+  display: block;
+  visibility: hidden;
+  height: 0;
+}
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
 
 /***** General Element Type Style *****/
 /*body {font-family: "微软雅黑","Arial","Helvetica","sans-serif";font-size:16px;background:#F8F8F0}*/
-body {font-size: 1em;line-height: 1.5;background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;font-family: 'Helvetica Neue', Helvetica, Arial, serif;text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);color: #6d6d6d;}
-a {color:#4A75B5;text-decoration:none;outline:none;}
+body {font-size: 1em;line-height: 1;background: #e7e7e7;font-family: 'Helvetica Neue', Helvetica, Arial, serif;text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);color: #6d6d6d;}
+a {color:#4A75B5;}
 /*a {color: #d5000d;}*/
 a:hover {text-decoration:underline;color: #c5000c;}
 a.external {padding-right:13px;background:url('/images/icons.gif') no-repeat right 1px;}
@@ -84,12 +127,7 @@ h3 {font-size: 18px;font-weight: bold;color: #d5000d;margin-bottom: 8px;}
 h4 {font-size: 16px;color: #303030;font-weight: bold;}
 h5 {font-size: 1em;color: #303030;}
 h6 {font-size: .8em;color: #303030;}
-p {font-weight: 300;margin-bottom: 20px;line-height: 25px;}
-p a {font-weight: 400;}
-ul li {list-style: disc inside;padding-left: 20px;}
-ol li {list-style: decimal inside;padding-left: 3px;}
-dl dt {color: #303030;}
-ul, ol, dl {margin-bottom: 20px;}
+
 code {
   background: #f2f2f2;
   border: 1px solid #ddd;
@@ -116,6 +154,7 @@ pre {
 pre code {color: #f2f2f2;background-color: #303030;border: none;padding: 0;}
 pre ol{margin-left:25px;list-style-type:decimal;}
 blockquote {font-size: 1.6em;border-left: 10px solid #e9e9e9;margin-bottom: 20px;padding: 0 0 0 30px;}
+
 
 /***** Common Style *****/
 hr {
@@ -178,29 +217,6 @@ a.button:hover {
 }
 a.button span {padding-left: 50px;display: block;height: 23px;}
 
-/***** Selection Style *****/
- /* 清理浮动 */
-.clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
-.clearfix{zoom:1; /* for IE6 IE7 */}
-/* 隐藏, 通常用来与 JS 配合 */
-body .hide{display:none;}
-/* 设置内联, 减少浮动带来的bug */
-.left,.right{display:inline;}
-.left{float:left;}
-.right{float:right;}
-
-/* MISC */
-.clearfix:after {
-  clear: both;
-  content: '.';
-  display: block;
-  visibility: hidden;
-  height: 0;
-}
-.clearfix {display: inline-block;}
-* html .clearfix {height: 1%;}
-.clearfix {display: block;}
-
 /************ Layout Style *****************/
 
 
@@ -235,7 +251,8 @@ header {
   padding-bottom: 0px;
 }
 header h1 {
-  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif; font-weight: 900;
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif; font-weight: 900;
+  text-shadow: 1px 1px 0 #fff,-1px -1px 0 #fff;
   letter-spacing: -1px;
   font-size: 48px;
   color: #303030;
@@ -268,11 +285,11 @@ header h3 {
 
 span.last{
   margin-left: 10px;
-  background: #56ffff;
+  background: #00c6e3;
 }
 span.next{
   margin-right: 10px;
-  background: #56ffff;
+  background: #00c6e3;
 }
 
 footer {
@@ -341,3 +358,6 @@ footer a:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {}
+
+
+
