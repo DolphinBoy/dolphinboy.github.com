@@ -7,18 +7,24 @@
 
 /***********Revise Settings**********/
 /* 清除所有标签的默认边距，防止在不同浏览器中展现不同的样式 */
-html, body, div, span, applet, object, iframe,
+*｛
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
+article, aside, canvas, details, 
 figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
+menu, nav, output, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -34,7 +40,7 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 /* 要注意表单元素并不继续父级 font 的问题 */
-body,button,input,select,textarea{font-size:12px/1.5;}
+button,input,select,textarea{font-size:12px/1.5;}
 input,select,textarea{font-size:100%;}
 /* 去掉各Table  cell 的边距并让其边重合 */
 table{border-collapse:collapse;border-spacing:0;}
@@ -237,7 +243,7 @@ header h1 {
 }
 header h2 {
   margin-top: 10px;
-  margin-right: 220px;
+  margin-right: 260px;
   letter-spacing: -1px;
   font-size: 24px;
   text-align: right;;
@@ -258,6 +264,15 @@ header h3 {
 
 #main_content {
   text-align: left;
+}
+
+span.last{
+  margin-left: 10px;
+  background: #56ffff;
+}
+span.next{
+  margin-right: 10px;
+  background: #56ffff;
 }
 
 footer {
