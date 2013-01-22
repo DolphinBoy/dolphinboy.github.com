@@ -120,7 +120,7 @@ a {color:#4A75B5;}
 a:hover {text-decoration:underline;color: #c5000c;}
 a.external {padding-right:13px;background:url('/images/icons.gif') no-repeat right 1px;}
 a.external:hover {background-position:right -14px;}
-h1,h1 a {font-size:32px;font-weight:bold;margin-bottom:32px;color:#000}
+h1,h1 a {font-size:32px;font-weight:bold;margin-top:20px;margin-bottom:32px;color:#000}
 h1 a:hover {text-decoration:none;}
 h2 {font-size: 22px;font-weight: bold;color: #303030;margin-bottom: 12px;} 
 h3 {font-size: 18px;font-weight: bold;color: #d5000d;margin-bottom: 8px;} 
@@ -299,7 +299,7 @@ a.button span {padding-left: 50px;display: block;height: 23px;}
 }
 #container .inner .nav {
   margin-right: 50px;
-  height: 10px;
+  height: 20px;
 }
 #container .inner .nav a{
   margin-right: 10px;
@@ -309,7 +309,7 @@ a.button span {padding-left: 50px;display: block;height: 23px;}
 }
 
 header {
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 0px;
 }
 header h1 {

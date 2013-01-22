@@ -4,10 +4,10 @@ auto:        true
 lsi:         false
 server_port: 4000
 pygments:    true
-markdown:    redcarpet
+markdown:    rdiscount
 permalink:   /:title
 
-title:            DolphinBoy.me
+title:            DolphinBoy
 url:              http://dolphinboy.me
 feed:             /atom.xml
 author:
@@ -15,8 +15,12 @@ author:
     email:        dolphinboyo@gmail.com
     twitter:      twitter.com/3kqing
     weibo:        weibo.com/longxinanlan
-description:      "DolphinBoy,Blog"
+description:      "DolphinBoy,Blog,Jekyll"
 author_info:      <a href="http://dolphinboy.me/about">DolphinBoy</a>
 
 copyright:
     - Design by <a href="http://dolphinboy.me/about" title="DolphinBoy" target="_blank">DolphinBoy</a>. &copy; 2013
+
+javascript:
+    - /js/jquery-1.9.0.min.js
+    - /js/jquery-1.9.0.min.js
