@@ -6,3 +6,4 @@
 *.pid
 *.gz
 
+_site

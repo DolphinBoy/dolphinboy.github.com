@@ -4,7 +4,7 @@ auto:        true
 lsi:         false
 server_port: 4000
 pygments:    true
-markdown:    redcloth
+markdown:    redcarpet
 permalink:   /:title
 
 title:            DolphinBoy.me
