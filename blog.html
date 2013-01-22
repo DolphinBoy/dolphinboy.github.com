@@ -1,0 +1,17 @@
+---
+layout: page
+title: 博文列表
+keywords: 博文列表,DolphinBoy
+---
+
+	这里是博客列表
+<ul class="bloglist">
+{% for post in site.categories.blog %}
+	<li>
+	  	<h2>
+	    	<a href="{{ post.url }}">{{ post.title }}</a>
+	  	</h2>
+	  	<span>{{ post.description }}</span>
+	</li>
+{% endfor %}
+</ul>

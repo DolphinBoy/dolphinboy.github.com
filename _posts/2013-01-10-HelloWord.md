@@ -3,7 +3,7 @@
 	description: 这是我的第一篇自己博客上的博文哦！
 　　title: HelloWord.
 	category: blog
-	tag: log
+	tags: log
 	keywords: HelloWord,第一篇博文,DolphiBoy
 　　---
 　　<h2>{{ page.title }}</h2>
