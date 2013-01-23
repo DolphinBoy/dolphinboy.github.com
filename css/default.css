@@ -11,9 +11,6 @@ html{
 body{
   height:100%;
 }
-html>body { /* for IE/Win */
-  font-size:10px;
-}
 /* 去除默认边框和边距 */
 /*fieldset,img,a img{border:none;}*/
 html, body, div, span, applet, object, iframe,
@@ -114,7 +111,7 @@ body .hide{display:none;}
 
 /***** General Element Type Style *****/
 /*body {font-family: "微软雅黑","Arial","Helvetica","sans-serif";font-size:16px;background:#F8F8F0}*/
-body {font-size: 1em;line-height: 1;background: #e7e7e7;font-family: 'Helvetica Neue', Helvetica, Arial, serif;text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);color: #6d6d6d;}
+body {font-size: 0.9em;line-height: 1;background: #e7e7e7;font-family: 'Helvetica Neue', Helvetica, Arial, serif;text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);color: #6d6d6d;}
 a {color:#4A75B5;}
 /*a {color: #d5000d;}*/
 a:hover {text-decoration:underline;color: #c5000c;}
@@ -280,6 +277,21 @@ a.button span {padding-left: 50px;display: block;height: 23px;}
   border-radius:11px 0 0 11px;
 }
 /***** Layout Style *****/
+/* Post Layout Style */
+
+/*--目录导航--*/
+#menuIndex {position:fixed;top:60px;right:20px;width:200px;overflow:auto}
+#menuIndex a {display:block}
+#menuIndex a:hover {text-decoration:none;}
+#menuIndex ul li{font-size:12px;margin-bottom:5px;word-wrap:break-word;padding-left:10px;}
+#menuIndex ul li.on{background-color:#eee}
+#menuIndex li.h1{font-size:14px;font-weight:normal;padding-left:0;margin-bottom:10px;}
+#menuIndex li.h3{padding-left:25px;}
+
+
+
+
+
 
 
 /*------ Index Style ------*/
@@ -382,6 +394,15 @@ footer a:hover {
   color: #444;
 }
 
+
+
+/*------ Archives Style ------*/
+
+.year { padding-top: 10px;height: 100px; font-family: "Times New Roman",Times,serif; font-size: 28px; font-style: italic;color: #8f006d;text-indent: 5px; }
+
+
+
+
 /*------ About Page Style ------*/
 #main_content {
 
@@ -389,10 +410,6 @@ footer a:hover {
 #main_content p {
 
 }
-
-
-
-
 
 
 
