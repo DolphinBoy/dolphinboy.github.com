@@ -8,7 +8,7 @@ keywords: 博文列表,DolphinBoy
 
 <section id="articles">
 	{% capture line_year %}{{ 'now' | date: '%Y' }}{% endcapture %}
-	{% capture line_mouth %}{{ post.date | date: '%m' }}{% endcapture %}
+	{% capture line_mouth %}{{ 'now' | date: '%m' }}{% endcapture %}
 	<div class="archivelist">
 		<p class="year">{{ line_year }}</p>
 		<p class="mouth">{{ now_mouth }}</p>
