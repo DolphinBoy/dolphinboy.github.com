@@ -16,7 +16,7 @@ keywords: 博文列表,DolphinBoy
 			{% for post in site.categories.blog %}
 	        	{% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
 
-				{% capture post_mouth %}{{ post.date | date: '%Y' }}{% endcapture %}
+				{% capture post_mouth %}{{ post.date | date: '%m' }}{% endcapture %}
 
 		        {% if line_year != post_year %}
 		            {% assign line_year = post_year %}
