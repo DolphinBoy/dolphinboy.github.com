@@ -7,28 +7,30 @@ keywords: 博文列表,DolphinBoy
 <h3>Article List&nbsp;&nbsp;<span>({{ site.categories.blog | size }} posts.)</span></h3>
 
 <section id="article_list">
+	{% capture line_year %}{{ 'now' | date: '%Y' }}{% endcapture %}
+	{% capture line_mouth %}{{ 'now' | date: '%m' }}{% endcapture %}
+	<div class="archive_year">
+		<p class="year">{{ line_year }}</p>
+		<div class="archive_mouth">
+			<p class="mouth">{{ line_mouth }}&nbsp;月</p>
 	{% for post in site.categories.blog %}
     	{% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
-    	{% assign last_year = post_year %}
-    	{% assign new_year = false %}
-	<div class="archive_year">
-		<p class="year">{{ last_year }}</p>
-		{% capture post_mouth %}{{ post.date | date: '%m' }}{% endcapture %}
-		{% assign last_mouth = post_mouth %}
-		{% assign new_mouth = false %}
-		<div class="archive_mouth">
-			<p class="mouth">{{ last_mouth }}&nbsp;月</p>
-		{% if last_year != post_year %}
+    	{% assign head_year = post_year %}
+
+		{% if line_year != post_year %}
 			{% assign new_year = true %}
-            {% assign last_year = post_year %}
+            {% assign line_year = post_year %}
+        </div>
+    </div>
 	<div class="archive_year">
-		<p class="year">{{ last_year }}</p>
+		<p class="year">{{ line_year }}</p>
 		{% endif %}
-		{% if last_mouth != post_mouth %}
+		{% capture post_mouth %}{{ post.date | date: '%m' }}{% endcapture %}
+		{% if line_mouth != post_mouth %}
 			{% assign new_mouth = true %}
-        	{% assign last_mouth = post_mouth %}
+        	{% assign line_mouth = post_mouth %}
 		<div class="archive_mouth">
-			<p class="mouth">{{ last_mouth }}&nbsp;月</p>
+			<p class="mouth">{{ line_mouth }}&nbsp;月</p>
 		{% endif %}
 			<div class="article_item">
 				<article class="article">
@@ -38,10 +40,13 @@ keywords: 博文列表,DolphinBoy
 					<div class="article_desc">{{ post.description }}</div>
 				</article>
 			</div>
-		{% if new_mouth == true %}	
+		{% if new_mouth == true %}
+			{% assign new_mouth = false %}	
 		</div>
 		{% endif %}
+
 	{% if new_year == true %}
+		{% assign new_year = false %}	
 	</div>
 	{% endif %}
 	{% endfor %}
