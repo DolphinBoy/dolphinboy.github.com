@@ -24,20 +24,19 @@ keywords: 博文列表,DolphinBoy
 			{% capture post_mouth %}{{ post.date | date: '%m' }}{% endcapture %}
 			{% if line_mouth != post_mouth %}
             	{% assign line_mouth = post_mouth %}
-			<div class="archive_mouth">
-				<p class="mouth">{{ line_mouth }}&nbsp;月</p>
+        </div>
+		<div class="archive_mouth">
+			<p class="mouth">{{ line_mouth }}&nbsp;月</p>
 			{% endif %}
-				<div class="article_item">
-					<article class="article">
-						<div class="article_title">
-							<p class="v-date"><span>&#8227;</span><time pubdate="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %d' }}</time>&nbsp;>></p>
-							<a href="{{ post.url }}">{{ post.title }}</a></div>
-						<div class="article_desc">{{ post.description }}</div>
-					</article>
-				</div>
-
-
+			<div class="article_item">
+				<article class="article">
+					<div class="article_title">
+						<p class="v-date"><span>&#8227;</span><time pubdate="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %d' }}</time>&nbsp;>></p>
+						<a href="{{ post.url }}">{{ post.title }}</a></div>
+					<div class="article_desc">{{ post.description }}</div>
+				</article>
 			</div>
+		</div>
 		</div>
 		
 		
