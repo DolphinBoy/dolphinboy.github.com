@@ -399,8 +399,11 @@ footer a:hover {
 /*------ Archives Style ------*/
 
 .year {
+  float: left;
+  display: inline;
   padding-top: 10px;
   height: 100px;
+  width: 100px;
   color: #fff;
   font-family: "Times New Roman",Times,serif; 
   font-size: 28px; 
@@ -409,12 +412,19 @@ footer a:hover {
   text-shadow: 0 0 3px rgba(255,0,0,0.6);
 }
 .mouth {
+  float: left;
+  display: inline;
+  clear: left;
+  width: 50px;
   margin-left: 10px;
   margin-top: 2px;
   height: 50px;
-
 }
-
+.articleitem {
+  width: 700px;
+  float: left;
+  display: inline;
+}
 
 
 /*------ About Page Style ------*/
