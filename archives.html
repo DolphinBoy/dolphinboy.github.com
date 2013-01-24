@@ -10,15 +10,17 @@ keywords: 博文列表,DolphinBoy
 	{% capture line_year %}{{ 'now' | date: '%Y' }}{% endcapture %}
 	<div class="archive_year">
 		<p class="year">{{ line_year }}</p>
+		<div class="article_item">
 	{% for post in site.categories.blog %}
     	{% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
 		{% if line_year != post_year %}
 			{% assign line_year = post_year %}
+		</div>
     </div>
 	<div class="archive_year">
 		<p class="year">{{ line_year }}</p>
-		{% endif %}
 		<div class="article_item">
+			{% endif %}
 			<article class="article">
 				<div class="article_title">
 					<p class="v-date">

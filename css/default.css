@@ -63,7 +63,7 @@ sub{vertical-align:text-bottom;}
 
 a {text-decoration:none;outline:none;}
 
-p {font-weight: 300;margin-bottom: 20px;line-height: 25px;}
+p {font-weight: 300;margin-bottom: 10px;line-height: 25px;}
 p a {font-weight: 400;}
 
 dl dt {color: #303030;}
@@ -214,7 +214,7 @@ a.button:hover {
 }
 a.button span {padding-left: 50px;display: block;height: 23px;}
 time {
-  color: #00c6e3;
+  color: #333;
   font-family: 'Helvetica';
   font-size: 12px;
   text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
@@ -406,6 +406,7 @@ footer a:hover {
 
 .year {
   float: left;
+  clear: left;
   display: inline;
   padding-top: 10px;
   height: 100px;
