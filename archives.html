@@ -11,20 +11,20 @@ keywords: 博文列表,DolphinBoy
 	{% capture line_mouth %}{{ 'now' | date: '%m' }}{% endcapture %}
 	<div class="archive_year">
 		<p class="year">{{ line_year }}</p>
+		<div class="archive_mouth">
+			<p class="mouth">{{ line_mouth }}&nbsp;月</p>
 	{% for post in site.categories.blog %}
     	{% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
 		{% if line_year != post_year %}
             {% assign line_year = post_year %}
+        </div>
     </div>
 	<div class="archive_year">
 		<p class="year">{{ line_year }}</p>
 		{% endif %}
-		<div class="archive_mouth">
-			<p class="mouth">{{ line_mouth }}&nbsp;月</p>
-			{% capture post_mouth %}{{ post.date | date: '%m' }}{% endcapture %}
-			{% if line_mouth != post_mouth %}
-            	{% assign line_mouth = post_mouth %}
-        </div>
+		{% capture post_mouth %}{{ post.date | date: '%m' }}{% endcapture %}
+		{% if line_mouth != post_mouth %}
+        	{% assign line_mouth = post_mouth %}
 		<div class="archive_mouth">
 			<p class="mouth">{{ line_mouth }}&nbsp;月</p>
 			{% endif %}
@@ -37,12 +37,6 @@ keywords: 博文列表,DolphinBoy
 				</article>
 			</div>
 		</div>
-		</div>
-		
-		
-		
-		
-
 	</div>
 	{% endfor %}
 </section>
