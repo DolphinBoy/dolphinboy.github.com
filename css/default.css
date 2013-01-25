@@ -309,7 +309,11 @@ time {
 }
 
 
-
+.item:before {
+  content: "►22ba";
+  color: #ccc;
+  margin-right: 5px;
+}
 
 
 /* code title */
@@ -354,7 +358,7 @@ time {
 #container {
   /*background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;*/
   background: #fff;
-  min-height: 595px;
+  margin-bottom: 30px;
 }
 
 .inner {
@@ -433,7 +437,7 @@ a.but{
 }
 
 footer {
-  height: 50px;
+  height: 30px;
   width: 100%;
   background: transparent url('../images/hr.png') 0 0 no-repeat;
   padding: 15px 20px 30px 20px;
