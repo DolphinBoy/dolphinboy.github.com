@@ -432,6 +432,8 @@ a.but{
 
 
 footer {
+  float: left;
+  clear: both;
   height: 50px;
   width: 100%;
   margin-top: 20px;
