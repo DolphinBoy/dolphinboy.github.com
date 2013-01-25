@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 博文列表
-keywords: 博文列表
+keywords: 博文列表,文章列表
 ---
 
 <h3>Article List&nbsp;&nbsp;<span>({{ site.categories.blog | size }} posts.)</span></h3>
@@ -17,7 +17,7 @@ keywords: 博文列表
 			{% assign line_year = post_year %}
 		</div>
     </div>
-	<div class="archive_year">
+	<div class="archive_year clearfix">
 		<p class="year">{{ line_year }}</p>
 		<div class="article_item">
 			{% endif %}

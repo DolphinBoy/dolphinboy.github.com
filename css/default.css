@@ -87,9 +87,12 @@ footer, header, hgroup, menu, nav, section {
 }
 
  /* 清理浮动 */
+
 .clearfix:before {content:"";display:table;}
 .clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;overflow:hidden;}
+.clearfix {display: inline-block;}
 .clearfix{zoom:1; /* for IE6 IE7 */}
+* html .clearfix {height: 1%;}
 /* 隐藏, 通常用来与 JS 配合 */
 body .hide{display:none;}
 /* 设置内联, 减少浮动带来的bug */
@@ -105,9 +108,7 @@ body .hide{display:none;}
   visibility: hidden;
   height: 0;
 }
-.clearfix {display: inline-block;}
-* html .clearfix {height: 1%;}
-.clearfix {display: block;}
+
 
 /***** General Element Type Style *****/
 /*body {font-family: "微软雅黑","Arial","Helvetica","sans-serif";font-size:16px;background:#F8F8F0}*/
@@ -412,6 +413,7 @@ header h3 {
 
 #main_content {
   text-align: left;
+  min-height: 595px;
   width: 100%;
 }
 
@@ -430,14 +432,11 @@ a.but{
   display: inline-block;
 }
 
-
 footer {
-  float: left;
-  clear: both;
   height: 50px;
   width: 100%;
-  margin-top: 20px;
-  padding-right: 30px;
+  background: transparent url('../images/hr.png') 0 0 no-repeat;
+  padding: 15px 20px 30px 20px;
   font-size: 13px;
   text-align: right;
   color: #aaa;
@@ -453,7 +452,12 @@ footer a:hover {
 
 
 /*------ Archives Style ------*/
-
+.archive_list {
+  width: 100%;
+}
+.archive_year {
+  width: 100%;
+}
 .year {
   float: left;
   clear: left;
@@ -492,7 +496,7 @@ footer a:hover {
 
 .article_title {
   float: left;
-  width: 100px;
+  width: 150px;
   height: 50px;
   padding: 5px;
 }
@@ -500,7 +504,6 @@ footer a:hover {
 .article_desc {
   float: left;
   height: 50px;
-  width: 460px;
   padding: 5px;
 }
 

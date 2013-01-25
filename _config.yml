@@ -19,7 +19,7 @@ description:      "DolphinBoy,Blog,Jekyll"
 author_info:      <a href="http://dolphinboy.me/about">DolphinBoy</a>
 
 copyright:
-    - Design by <a href="http://dolphinboy.me/about" title="DolphinBoy" target="_blank">DolphinBoy</a>. &copy; 2013
+    - Copyright &copy; 2013 Design by <a href="http://dolphinboy.me/about" title="DolphinBoy" target="_blank">DolphinBoy</a>.  Powered by <a href="http://pages.github.com/" title="Github Page" target="_blank">Github Page</a>
 
 javascript:
     - /js/jquery-1.9.0.min.js
