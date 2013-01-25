@@ -4,9 +4,9 @@
  * -------------------------------------------------
 */
 html{
-    height:100%;
+  height:100%;
   -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 body{
   height:100%;
@@ -63,7 +63,7 @@ sub{vertical-align:text-bottom;}
 
 a {text-decoration:none;outline:none;}
 
-p {font-weight: 300;margin-bottom: 10px;line-height: 25px;}
+p {font-weight: 300;margin-bottom: 5px;line-height: 20px;}
 p a {font-weight: 400;}
 
 dl dt {color: #303030;}
@@ -214,14 +214,16 @@ a.button:hover {
 }
 a.button span {padding-left: 50px;display: block;height: 23px;}
 time {
-  color: #333;
+  color: #F35517;
   font-family: 'Helvetica';
-  font-size: 12px;
-  text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+  font-size: 14px;
 }
 
 /***** Custom Style *****/
-.lightgreybtn{
+.time {
+
+}
+.lightgreybtn {
   border:1px solid #ccc;
   color:#666;
   text-shadow:0 1px 0 rgba(255,255,255,0.8);
@@ -236,12 +238,12 @@ time {
   background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(230,230,230,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-8 */
 }
-.lightgreybtn:hover{
+.lightgreybtn:hover {
   background:#e6e6e6;
   color:#666;
   filter:none;
 }
-.darkgreybtn{
+.darkgreybtn {
   border:1px solid #848484;
   color:#fff;
   text-shadow:0 -1px 0 rgba(0,0,0,0.3);
@@ -256,14 +258,14 @@ time {
   background: linear-gradient(top,  rgba(212,212,212,1) 0%,rgba(162,162,162,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4d4', endColorstr='#a2a2a2',GradientType=0 ); /* IE6-8 */
 }
-.darkgreybtn:hover{
+.darkgreybtn:hover {
   background:#C0BFBF;
   color:#fff;
   filter:none;
 }
 
 /* code title */
-.codetitle{
+.codetitle {
   display:inline-block;*display:inline;*zoom:1;
   padding:2px 8px;
   background-color:#00c5e3;
@@ -276,10 +278,10 @@ time {
   _position:relative;
   _zoom:1;
 }
-.codetitle_right{
+.codetitle_right {
   border-radius:0 11px 11px 0;
 }
-.codetitle_left{
+.codetitle_left {
   border-radius:11px 0 0 11px;
 }
 /***** Layout Style *****/
@@ -424,10 +426,16 @@ footer a:hover {
   float: left;
   display: inline;
 }
+.article {
+  margin-bottom: 5px;
+}
+.article_title {
+  float: left;
+}
 
-
-
-
+.article_desc {
+  float: left;
+}
 
 
 /*------ About Page Style ------*/
