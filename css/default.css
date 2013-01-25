@@ -412,6 +412,7 @@ header h3 {
 
 #main_content {
   text-align: left;
+  width: 100%;
 }
 
 .last{
@@ -432,8 +433,8 @@ a.but{
 
 footer {
   height: 50px;
-  margin-top: 10px;
-  padding-top: 10px;
+  width: 100%;
+  margin-top: 20px;
   padding-right: 30px;
   font-size: 13px;
   text-align: right;
