@@ -10,6 +10,8 @@ title: index
     <span class="date">{{post.date}}</span>
     </p>
     <div class="content">
-    {{ post.content }}
+	{% if post.category == index %}
+		{{ post.content }}
+	{% endif %}
     </div>
 {% endfor %}
