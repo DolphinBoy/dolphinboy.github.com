@@ -4,14 +4,14 @@ title: index
 ---
 
 {% for post in paginator.posts %}
+	{% if post.category == index %}
    <!-- here add you post markup -->
     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
     <p class="author">
     <span class="date">{{post.date}}</span>
     </p>
     <div class="content">
-	{% if post.category == index %}
-		{{ post.content }}
-	{% endif %}
+	{{ post.content }}
     </div>
+    {% endif %}
 {% endfor %}
