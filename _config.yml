@@ -6,6 +6,10 @@ server_port: 4000
 pygments:    true
 markdown:    rdiscount
 permalink:   /:title
+lsi: true
+exclude: ['README.markdown', 'README_FOR_COLLABORATORS.markdown', 'Gemfile.lock', 'Gemfile']
+production: false
+paginate: 3 //每页面帖子的数量
 
 title:            DolphinBoy
 url:              http://dolphinboy.me
@@ -21,7 +25,7 @@ author_info:      <a href="http://dolphinboy.me/about">DolphinBoy</a>
 copyright:
     - Copyright &copy; 2013 Design by <a href="http://dolphinboy.me/about" title="DolphinBoy" target="_blank">DolphinBoy</a>.  Powered by <a href="http://pages.github.com/" title="Github Page" target="_blank">Github Page</a>
 
-paginate: 3 //每页面帖子的数量
+
 
 javascript:
     - /js/jquery-1.9.0.min.js
