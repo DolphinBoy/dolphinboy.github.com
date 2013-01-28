@@ -1,53 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/default.css" media="screen" />
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>DolphinBoy</title>
-  </head>
+---
+layout: page
+title: index
+---
 
-  <body>
-    <div id="container">
-      <div class="inner">
-        <header>
-        	<div class="nav right">
-        		<a href="/index">Home</a>
-            	<a href="/archives">Archives</a>
-            	<a href="/page">Page</a>
-              <a href="/project">Project</a>
-           		<a href="/about">About</a>
-            </div>
-            <h1>DolphinBoy</h1>
-            <h2>人生中，最大的敌人就是自己，人的一生就是和自己抗争的过程...</h2>
-            <h3>——龙</h3>
-        </header>
-		<hr>
-        <div id="main_content">
-         	<img src="resources/waitingforyou.png" alt="Waiting for you.">
-         	{% for post in paginator.posts %}
-			   <!-- here add you post markup -->
-			    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-			    <p class="author">
-			    <span class="date">{{post.date}}</span>
-			    </p>
-			    <div class="content">
-			    {{ post.content }}
-			    </div>
-			{% endfor %}
-        </div>
-        <div class="bottom_nav clearfix">
-        	<a class="codetitle codetitle_left left last" href="#">last</a>
-        	<a class="codetitle codetitle_right right next" href="#">next</a>
-        </div>
-        <footer>
-        	Design by <a href="http://dolphinboy.me/about" title="DolphinBoy" target="_blank">DolphinBoy</a>. &copy; 2013
-        </footer>
-      </div>
+{% for post in paginator.posts %}
+   <!-- here add you post markup -->
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <p class="author">
+    <span class="date">{{post.date}}</span>
+    </p>
+    <div class="content">
+    {{ post.content }}
     </div>
-  </body>
-</html>
+{% endfor %}
