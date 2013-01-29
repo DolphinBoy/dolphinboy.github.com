@@ -267,7 +267,7 @@ time {
 /* shadow */
 .outershadow {
   padding:2px;
-  border:1px solid #ccc;
+  border:2px solid #ccc;
   -moz-border-radius:5px;
   -webkit-border-radius:5px;
   border-radius:5px;
@@ -281,14 +281,14 @@ time {
   transition:all 0.3s ease;
 }
 .outershadow:hover{
-  border:1px solid rgba(82, 168, 236, 0.6);
+  border:2px solid rgba(82, 168, 236, 0.6);
   -webkit-box-shadow:0 0 8px rgba(82, 168, 236, 0.6);
   -moz-box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
   box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
 }
 
 .innershadow {
-  border:1px solid #ccc;
+  border:2px solid #ccc;
   -moz-border-radius:5px;
   -webkit-border-radius:5px;
   border-radius:5px;
@@ -302,7 +302,7 @@ time {
   transition:all 0.3s ease;
 }
 .innershadow:hover{
-  border:1px solid rgba(82, 168, 236, 0.6);
+  border:2px solid rgba(82, 168, 236, 0.6);
   -webkit-box-shadow:inset 0 0 8px rgba(82, 168, 236, 0.6);
   -moz-box-shadow:inset 0 0 8px rgba(82, 168, 236, 0.6);
   box-shadow:inset 0 0 8px rgba(82, 168, 236, 0.6);
@@ -336,24 +336,11 @@ time {
   border-radius:11px 0 0 11px;
 }
 /***** Layout Style *****/
-/* Post Layout Style */
-
-/*--目录导航--*/
-#menuIndex {position:fixed;top:60px;right:20px;width:200px;overflow:auto}
-#menuIndex a {display:block}
-#menuIndex a:hover {text-decoration:none;}
-#menuIndex ul li{font-size:12px;margin-bottom:5px;word-wrap:break-word;padding-left:10px;}
-#menuIndex ul li.on{background-color:#eee}
-#menuIndex li.h1{font-size:14px;font-weight:normal;padding-left:0;margin-bottom:10px;}
-#menuIndex li.h3{padding-left:25px;}
-
-
-
-
-
-
-
-/*------ Index Style ------*/
+a.but {
+  cursor: pointer;
+  display: inline-block;
+}
+/*------ Page Layout Style ------*/
 #container {
   /*background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;*/
   background: #fff;
@@ -420,28 +407,6 @@ header h3 {
   width: 100%;
 }
 
-
-
-a.but {
-  cursor: pointer;
-  display: inline-block;
-}
-
-.bottom_nav {
-  height: 10px;
-  width: 100%;
-}
-
-.last {
-  margin-left: 10px;
-
-
-}
-.next {
-  margin-right: 10px;
-
-}
-
 footer {
   height: 30px;
   width: 100%;
@@ -460,6 +425,45 @@ footer a:hover {
 }
 
 
+/* Post Layout Style */
+
+/*--目录导航--*/
+#menuIndex {position:fixed;top:60px;right:20px;width:200px;overflow:auto}
+#menuIndex a {display:block}
+#menuIndex a:hover {text-decoration:none;}
+#menuIndex ul li{font-size:12px;margin-bottom:5px;word-wrap:break-word;padding-left:10px;}
+#menuIndex ul li.on{background-color:#eee}
+#menuIndex li.h1{font-size:14px;font-weight:normal;padding-left:0;margin-bottom:10px;}
+#menuIndex li.h3{padding-left:25px;}
+
+
+
+/* index page post style */
+.log {
+  width: 100%;
+}
+.log div.image {
+  text-align: center;
+}
+.log em.text {
+  padding: 5px;
+  border: 5px solid #ccc;
+}
+.log time {
+  
+}
+
+.bottom_nav {
+  height: 10px;
+  width: 100%;
+}
+.last {
+  margin-left: 10px;
+
+}
+.next {
+  margin-right: 10px;
+}
 
 /*------ Archives Style ------*/
 .archive_list {
