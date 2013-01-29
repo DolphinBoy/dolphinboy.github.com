@@ -3,7 +3,7 @@ layout: post
 title: HelloWord
 description: 这是我的第一篇自己博客上的博文哦！
 category: blog
-tags: log
+tags: article
 keywords: HelloWord,第一篇博文,DolphiBoy
 ---
 # {{ page.title }}
