@@ -442,15 +442,15 @@ footer a:hover {
 .log {
   width: 100%;
 }
-.log div.image {
+.log .image {
   text-align: center;
 }
-.log em.text {
+.log .text {
   padding: 5px;
   border: 5px solid #ccc;
 }
 .log time {
-  
+
 }
 
 .bottom_nav {
