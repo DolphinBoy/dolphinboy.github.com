@@ -3,13 +3,10 @@ layout: page
 
 javascript:
     - /js/jquery-1.9.0.min.js
-    - /js/tagnav.js
+    - /js/anchor_nav.js
 css:
     - /css/pygment_trac.css
 ---
-{% for css in page.css %}
-    <link rel="stylesheet" href="{\{ css }\}" type="text/css" />
-{% endfor %}
 <div class="post">
     <h1 class="title">{{ page.title }}</h1>
     <p class="meta">
@@ -22,6 +19,3 @@ css:
     <a href="#" class="comment" onclick="return false;">点击查看评论</a>
     <div id="disqus_thread"></div>
 </div>
-{% for js in page.javascript %}
-    <script type="text/javascript" src="{{ js }}" ></script>
-{% endfor %}

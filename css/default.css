@@ -431,7 +431,7 @@ footer a:hover {
 }
 .post .title {
   margin-left: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-family: "Times New Roman",Times,serif;
   padding: 0 0;
   line-height: 32px;
@@ -439,7 +439,7 @@ footer a:hover {
 }
 .post .meta {
   text-align: right;
-  margin-right: 100px;
+  margin-right: 80px;
 }
 .post .meta time {
   
@@ -451,12 +451,11 @@ footer a:hover {
   text-align: center;
   color: #888;
   text-indent: 0;
-  border-top: 1px solid #e8e8e8;
-  border-bottom: 1px solid #f0f0f0;
+  border-top: 1px dashed #f0f0f0;
+  border-bottom: 1px dashed #e8e8e8;
   margin-bottom: 30px;
 }
 .post h2 {
-  font-size: 16px;
   line-height: 26px;
   color: #489620;
   border-bottom: 1px solid #e8e8e8;
