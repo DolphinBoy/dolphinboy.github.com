@@ -5,7 +5,7 @@ lsi:         false
 server_port: 4000
 pygments:    true
 markdown:    rdiscount
-permalink:   /:title
+permalink:   /:year-:day-:month/:title.html
 lsi: true
 exclude: ['README.markdown', 'README_FOR_COLLABORATORS.markdown', 'Gemfile.lock', 'Gemfile']
 production: false

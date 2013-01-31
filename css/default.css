@@ -425,6 +425,16 @@ footer a:hover {
 
 
 /* Post Layout Style */
+.post {
+
+}
+.post .title {
+
+}
+.post .meta {
+
+}
+
 
 /*--目录导航--*/
 #menuIndex {position:fixed;top:60px;right:20px;width:200px;overflow:auto}
@@ -525,9 +535,6 @@ footer a:hover {
   padding: 5px;
 }
 
-.article_copyright {
-
-}
 #disqus_container {
 
 

@@ -3,10 +3,9 @@ layout: post
 title: HelloWord
 description: 这是我的第一篇自己博客上的博文哦！
 category: blog
-tags: article
-keywords: HelloWord,第一篇博文,DolphiBoy
+tags: other
+keywords: HelloWord,世界你好,第一篇博文
 ---
-# {{ page.title }}
 
 ## 想法
 建立一个自己的博客，之所以有这样的想法我想应该有一下原因吧：  
@@ -35,5 +34,3 @@ keywords: HelloWord,第一篇博文,DolphiBoy
 
 ## 展望
 就是个博客而已，能走多远就走多远……
-
-{{ page.date | date_to_string }}

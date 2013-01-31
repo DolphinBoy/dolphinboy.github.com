@@ -8,10 +8,13 @@ css:
     - /css/pygment_trac.css
 ---
 <div class="post">
+    <h1 class="title">{{ page.title }}</h1>
+    <p class="meta">
+        <time pubdate="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
+    </p>
+    <p>By {{ site.author_info }}</p>
+    <p class="description">{{ page.description }}</p>
     {{ content }}
-</div>
-<div class="article_copyright">
-    This is from {{ site.author_info }}
 </div>
 <div id="disqus_container"> 
     <a href="#" class="comment" onclick="return false;">点击查看评论</a>
