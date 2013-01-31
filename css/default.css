@@ -464,10 +464,10 @@ footer a:hover {
 }
 
 /*--目录导航--*/
-#anchorIndex {position:fixed;top:70px;right:22px;width:200px;overflow:auto}
+#anchorIndex {position:fixed;top:120px;right:22px;width:200px;overflow:auto}
 #anchorIndex a {display:block}
 #anchorIndex a:hover {text-decoration:none;}
-#anchorIndex ul li {font-size:12px;margin-bottom:5px;word-wrap:break-word;padding-left:10px;}
+#anchorIndex ul li {list-style:none;font-size:12px;margin-bottom:5px;word-wrap:break-word;padding-left:10px;}
 #anchorIndex ul li.on {background-color:rgb(203, 230, 203);} /*#cce6cb*/
 #anchorIndex li.h1 {font-size:14px;font-weight:normal;padding-left:0;margin-bottom:10px;}
 #anchorIndex li.h3 {padding-left:25px;}
