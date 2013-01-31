@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var isMobile = {
+    var isMobile = {  //检测是否是移动设备
         Android: function() {
             return navigator.userAgent.match(/Android/i);
         }
@@ -22,18 +22,9 @@ $(document).ready(function(){
 
     $('pre').addClass('prettyprint linenums') //添加Google code Hight需要的class
 
-    //***********************
-    //**评论的代码也删掉哦***
-    window.disqus_shortname = 'beiyuu'; // required: replace example with your forum shortname
-    $('#disqus_container .comment').on('click',function(){
-        $(this).html('加载中...');
-        var that = this;
-        $.getScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()});
-    });
-    //**评论的代码也删掉哦***
-    //***********************
-
-    $('.entry a').each(function(index,element){
+    
+    /**
+    $('.post a').each(function(index,element){
         var href = $(this).attr('href');
         if(href){
             if(href.indexOf('#') == 0){
@@ -44,21 +35,21 @@ $(document).ready(function(){
                 $(this).addClass('external');
             }
         }
-    });
-
+    });*/
+    /**如果h2标签的个数大于5个并且不是手机设备则添加右侧导航栏*/
     if($('h2').length > 2 && !isMobile.any()){
         var h2 = [],h3 = [],tmpl = '<ul>',h2index = 0;
-        var findScrollableElement = function(els) {
-            for (var i = 0, argLength = arguments.length; i < argLength; i++) {
+        var findScrollableElement = function(els){  //搜索滚动节点
+            for(var i = 0, argLength = arguments.length; i < argLength; i++){
                 var el = arguments[i],
                 $scrollElement = $(el);
-                if ($scrollElement.scrollTop() > 0) {
+                if($scrollElement.scrollTop() > 0){
                     return $scrollElement;
-                } else {
+                }else{
                     $scrollElement.scrollTop(1);
                     var isScrollable = $scrollElement.scrollTop() > 0;
                     $scrollElement.scrollTop(0);
-                    if (isScrollable) {
+                    if(isScrollable){
                         return $scrollElement;
                     }
                 }
@@ -66,27 +57,27 @@ $(document).ready(function(){
             return [];
         };
 
-        $.each($('h2,h3'),function(index,item){
+        $.each($('h2,h3'),function(index,item){  //检测h2,h3节点，并实例化节点数据
             if(item.tagName.toLowerCase() == 'h2'){
                 var h2item = {};
                 h2item.name = $(item).text();
-                h2item.id = 'menuIndex'+index;
+                h2item.id = 'anchorIndex'+index;
                 h2.push(h2item);
                 h2index++;
             }else{
                 var h3item = {};
                 h3item.name = $(item).text();
-                h3item.id = 'menuIndex'+index;
+                h3item.id = 'anchorIndex'+index;
                 if(!h3[h2index-1]){
                     h3[h2index-1] = [];
                 }
                 h3[h2index-1].push(h3item);
             }
-            item.id = 'menuIndex' + index
+            item.id = 'anchorIndex' + index
         });
 
         //添加h1
-        tmpl += '<li class="h1"><a href="#" data-top="0">'+$('h1').text()+'</a></li>';
+        tmpl += '<li class="h1"><a href="#" data-top="0">'+$('.post h1').text()+'</a></li>';
          for(var i=0;i<h2.length;i++){
             tmpl += '<li><a href="#" data-id="'+h2[i].id+'">'+h2[i].name+'</a></li>';
             if(h3[i]){
@@ -98,17 +89,17 @@ $(document).ready(function(){
         tmpl += '</ul>';
 
         var $scrollable = findScrollableElement('body','html');
-        $('body').append('<div id="menuIndex"></div>');
-        $('#menuIndex').append($(tmpl)).delegate('a','click',function(e){
-                    e.preventDefault();
-                    var scrollNum = $(this).attr('data-top') || $('#'+$(this).attr('data-id')).offset().top;
-                    //window.scrollTo(0,scrollNum-30);
-                    $scrollable.animate({ scrollTop: scrollNum-30 }, 400, 'swing');
-                })
+        $('body').append('<div id="anchorIndex"></div>');
+        $('#anchorIndex').append($(tmpl)).delegate('a','click',function(e){  //根据节点数据生成相应的导航栏
+            e.preventDefault();
+            var scrollNum = $(this).attr('data-top') || $('#'+$(this).attr('data-id')).offset().top;
+            //window.scrollTo(0,scrollNum-30);
+            $scrollable.animate({ scrollTop: scrollNum-30 }, 400, 'swing');
+        })
 
         $(window).load(function(){
             var scrollTop = [];
-            $.each($('#menuIndex li a'),function(index,item){
+            $.each($('#anchorIndex li a'),function(index,item){
                 if(!$(item).attr('data-top')){
                     var top = $('#'+$(item).attr('data-id')).offset().top;
                     scrollTop.push(top);
@@ -128,15 +119,22 @@ $(document).ready(function(){
                         }
                     }
                 }
-                $('#menuIndex li').removeClass('on')
-                $('#menuIndex li').eq(index).addClass('on')
+                $('#anchorIndex li').removeClass('on');  //取消当前标签高亮属性
+                $('#anchorIndex li').eq(index).addClass('on');  //增加当前标签高亮属性
             });
         });
 
         //用js计算屏幕的高度
-        $('#menuIndex').css('max-height',$(window).height()-80);
+        $('#anchorIndex').css('max-height',$(window).height()-80);
     }
+    //***********添加评论功能************
+    window.disqus_shortname = 'dolphinboy'; // required: replace example with your forum shortname
+    $('#disqus_container .comment').on('click',function(){
+        $(this).html('加载中...');
+        var that = this;
+        $.getScript('http://' + disqus_shortname + '.dolphinboy.me/embed.js',function(){$(that).remove()});
+    });
+    //***********************
 
     $.getScript('/js/prettify/prettify.js',function(){prettyPrint()});
-    $.getScript('/js/jia.js',function(){});
 });

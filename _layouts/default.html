@@ -17,6 +17,9 @@
     {% for css in page.css %}
     <link rel="stylesheet" href="{\{ css }\}" type="text/css" />
     {% endfor %}
+    <!-- JiaThis Button BEGIN -->
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1356107616618126&move=0" charset="utf-8"></script>
+<!-- JiaThis Button END -->
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]--> 
@@ -24,7 +27,7 @@
     {{ content }}
 
     {% for js in page.javascript %}
-    <script type="text/javascript" src="{{ js }}" ></script>
+    <script src="{{ js }}" type="text/javascript"></script>
     {% endfor %}
 </html>
 
