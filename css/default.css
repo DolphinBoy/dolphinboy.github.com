@@ -429,12 +429,33 @@ footer a:hover {
 
 }
 .post .title {
-
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-family: "Times New Roman",Times,serif;
+  padding: 0 0;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #e18b3a;
 }
 .post .meta {
-
+  text-align: right;
+  margin-right: 100px;
+}
+.post .meta time {
+  color: #489620;
 }
 
+
+.post .description {
+  padding: 8px 12px;
+  font-style: italic;
+  text-align: center;
+  color: #888;
+  text-indent: 0;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #f0f0f0;
+}
 
 /*--目录导航--*/
 #menuIndex {position:fixed;top:60px;right:20px;width:200px;overflow:auto}
