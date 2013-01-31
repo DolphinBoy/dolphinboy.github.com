@@ -12,12 +12,19 @@
     <meta name="robots" content="all" />
     <meta http-equiv="Window-target" content="_top">
     <link rel="stylesheet" href="/css/default.css" type="text/css" />
-    <link rel="stylesheet" href="/css/pygment_trac.css" />
     <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    {% for css in page.css %}
+    <link rel="stylesheet" href="{\{ css }\}" type="text/css" />
+    {% endfor %}
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <![endif]--> 
 </head>
     {{ content }}
+
+    {% for js in page.javascript %}
+    <script type="text/javascript" src="{{ js }}" ></script>
+    {% endfor %}
 </html>
+

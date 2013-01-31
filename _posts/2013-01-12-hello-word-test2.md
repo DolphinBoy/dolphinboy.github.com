@@ -7,7 +7,7 @@ tags: log
 keywords: HelloWord,第一篇博文,DolphiBoy
 ---
 # {{ page.title }}
-
+<time pubdate="{{ post.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
 ## 想法
 建立一个自己的博客，之所以有这样的想法我想应该有一下原因吧：  
 
@@ -36,4 +36,3 @@ keywords: HelloWord,第一篇博文,DolphiBoy
 ## 展望
 就是个博客而已，能走多远就走多远……
 
-{{ page.date | date_to_string }}

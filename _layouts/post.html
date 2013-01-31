@@ -1,11 +1,17 @@
 ---
 layout: page
+
+javascript:
+    - /js/jquery-1.9.0.min.js
+    - /js/tagnav.js
+css:
+    - /css/pygment_trac.css
 ---
 <div class="post">
     {{ content }}
 </div>
 <div class="article_copyright">
-    This is from <a href="{{ site.author_info }}" target="_black">{{ site.title }}</a>.
+    This is from {{ site.author_info }}
 </div>
 <div id="disqus_container"> 
     <a href="#" class="comment" onclick="return false;">点击查看评论</a>
