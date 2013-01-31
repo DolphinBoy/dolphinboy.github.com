@@ -446,8 +446,12 @@ footer a:hover {
   text-align: center;
 }
 .log .text {
-  padding: 5px;
+  text-align: right;
+}
+.log em {
+  padding: 20px;
   border: 5px solid #ccc;
+  margin: 20px 50px 20px 0px;
 }
 .log time {
 
