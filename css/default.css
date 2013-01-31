@@ -356,7 +356,6 @@ a.but {
   max-width: 100%;
 }
 #container .inner .nav {
-  margin-right: 50px;
   height: 20px;
 }
 #container .inner .nav a{
@@ -447,11 +446,13 @@ footer a:hover {
 }
 .log .text {
   text-align: right;
-}
-.log em {
+  margin: 20px 50px 20px 0px;
   padding: 20px;
   border: 5px solid #ccc;
-  margin: 20px 50px 20px 0px;
+}
+.log em {
+  font-size: 1.2em;
+  margin-left: 50px;
 }
 .log time {
 
