@@ -37,7 +37,7 @@ $(document).ready(function(){
         }
     });*/
     /**如果h2标签的个数大于5个并且不是手机设备则添加右侧导航栏*/
-    if($('.post h2').length > 2 && !isMobile.any()){
+    if($('div.post h2').length > 2 && !isMobile.any()){
         var h2 = [],h3 = [],tmpl = '<ul>',h2index = 0;
         var findScrollableElement = function(els){  //搜索滚动节点
             for(var i = 0, argLength = arguments.length; i < argLength; i++){
@@ -57,7 +57,7 @@ $(document).ready(function(){
             return [];
         };
 
-        $.each($('.post h2,h3'),function(index,item){  //检测h2,h3节点，并实例化节点数据
+        $.each($('div.post h2,h3'),function(index,item){  //检测h2,h3节点，并实例化节点数据
             if(item.tagName.toLowerCase() == 'h2'){
                 var h2item = {};
                 h2item.name = $(item).text();
@@ -77,7 +77,7 @@ $(document).ready(function(){
         });
 
         //添加h1
-        tmpl += '<li class="h1"><a href="#" data-top="0">'+$('.post h1').text()+'</a></li>';
+        tmpl += '<li class="h1"><a href="#" data-top="0">'+$('div.post h1').text()+'</a></li>';
          for(var i=0;i<h2.length;i++){
             tmpl += '<li><a href="#" data-id="'+h2[i].id+'">'+h2[i].name+'</a></li>';
             if(h3[i]){
