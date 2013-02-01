@@ -137,7 +137,7 @@ $(document).ready(function(){
     //***********************
 
     //***********添加分享功能************
-    $.getScript('http://v3.jiathis.com/code/jiathis_r.js?uid=1356107616618126&type=left&amp;move=0',function(){});
+    //$.getScript('http://v3.jiathis.com/code/jiathis_r.js?uid=1356107616618126&type=left&amp;move=0',function(){});
     //***********************
 
     //***********添加代码高亮功能************
