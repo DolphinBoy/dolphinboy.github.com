@@ -20,9 +20,6 @@ $(document).ready(function(){
         }
     };
 
-    $('pre').addClass('prettyprint linenums') //添加Google code Hight需要的class
-
-    
     /**
     $('.post a').each(function(index,element){
         var href = $(this).attr('href');
@@ -127,14 +124,4 @@ $(document).ready(function(){
         //用js计算屏幕的高度
         $('#anchorIndex').css('max-height',$(window).height()-80);
     }
-    //***********添加评论功能************
-    window.disqus_shortname = 'dolphinboy'; // required: replace example with your forum shortname
-    $('#disqus_container .comment').on('click',function(){
-        $(this).html('加载中...');
-        var that = this;
-        $.getScript('http://' + disqus_shortname + '.dolphinboy.me/embed.js',function(){$(that).remove()});
-    });
-    //***********************
-
-    $.getScript('/js/prettify/prettify.js',function(){prettyPrint()});
 });

@@ -473,17 +473,13 @@ footer a:hover {
 #anchorIndex li.h3 {padding-left:25px;}
 
 .announce {
-    margin: 20px 10px 15px 0;
+    margin: 0px 50px 0px 50px;
     font-family: verdana, \9ED1\4F53, sans-serif;
     background: #9ccbf1;
     background: -moz-linear-gradient(-90deg, #6db0e6 0%, #8fbadd 4%, #9ccbf1 15%, #9ccbf1 100%);
     background: -webkit-linear-gradient(-90deg, #6db0e6 0%, #8fbadd 4%, #9ccbf1 15%, #9ccbf1 100%);
     background: -ms-linear-gradient(to -90deg, #6db0e6 0%, #8fbadd 4%, #9ccbf1 15%, #9ccbf1 100%);
     background: linear-gradient(to -90deg, #6db0e6 0%, #8fbadd 4%, #9ccbf1 15%, #9ccbf1 100%);
-    border-top: 1px solid #65a5d8;
-    border-left: 1px solid #6db0e6;
-    border-right: 1px solid #6db0e6;
-    border-bottom: 1px solid #6db0e6;
     border-radius: 3px 3px;
 }
 .announce p {
@@ -507,7 +503,7 @@ footer a:hover {
   text-align: center;
 }
 .log .text {
-  margin: 20px 50px 20px 0px;
+  margin: 30px 30px 20px 30px;
   padding: 20px;
   border: 5px solid #ccc;
 }
