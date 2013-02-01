@@ -475,15 +475,15 @@ footer a:hover {
 .announce {
     margin: 0px 50px 0px 50px;
     font-family: verdana, \9ED1\4F53, sans-serif;
-    background: #9ccbf1;
-    background: -moz-linear-gradient(-90deg, #6db0e6 0%, #8fbadd 4%, #9ccbf1 15%, #9ccbf1 100%);
-    background: -webkit-linear-gradient(-90deg, #6db0e6 0%, #8fbadd 4%, #9ccbf1 15%, #9ccbf1 100%);
-    background: -ms-linear-gradient(to -90deg, #6db0e6 0%, #8fbadd 4%, #9ccbf1 15%, #9ccbf1 100%);
-    background: linear-gradient(to -90deg, #6db0e6 0%, #8fbadd 4%, #9ccbf1 15%, #9ccbf1 100%);
+    background: none repeat scroll 0 0 #DFEAF8;;
+    background: -moz-linear-gradient(-90deg, #6db0e6 0%, #8fbadd 4%, #DFEAF8 15%, #DFEAF8 100%);
+    background: -webkit-linear-gradient(-90deg, #6db0e6 0%, #8fbadd 4%, #DFEAF8 15%, #DFEAF8 100%);
+    background: -ms-linear-gradient(to -90deg, #6db0e6 0%, #8fbadd 4%, #DFEAF8 15%, #DFEAF8 100%);
+    background: linear-gradient(to -90deg, #6db0e6 0%, #8fbadd 4%, #DFEAF8 15%, #DFEAF8 100%);
     border-radius: 3px 3px;
 }
 .announce p {
-    padding: 0 8px;
+    padding: 10px;
     line-height: 26px;
     font-size: 12px;
     color: #155b92;
