@@ -141,4 +141,6 @@ $(document).ready(function(){
     //***********************
 
     //***********添加代码高亮功能************
+    $('pre').addClass('prettyprint linenums') //添加Google code Hight需要的class
+    $.getScript('/js/prettify/prettify.js',function(){prettyPrint()});
 });
