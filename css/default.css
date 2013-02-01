@@ -472,16 +472,27 @@ footer a:hover {
 #anchorIndex li.h1 {font-size:14px;font-weight:normal;padding-left:0;margin-bottom:10px;}
 #anchorIndex li.h3 {padding-left:25px;}
 
-.announce {
+.announce1 {
     margin: 0px 50px 0px 50px;
     font-family: verdana, \9ED1\4F53, sans-serif;
-    background: none repeat scroll 0 0 #DFEAF8;;
-    background: -moz-linear-gradient(-90deg, #6db0e6 0%, #8fbadd 4%, #DFEAF8 15%, #DFEAF8 100%);
-    background: -webkit-linear-gradient(-90deg, #6db0e6 0%, #8fbadd 4%, #DFEAF8 15%, #DFEAF8 100%);
-    background: -ms-linear-gradient(to -90deg, #6db0e6 0%, #8fbadd 4%, #DFEAF8 15%, #DFEAF8 100%);
-    background: linear-gradient(to -90deg, #6db0e6 0%, #8fbadd 4%, #DFEAF8 15%, #DFEAF8 100%);
+    background: #9ccbf1;
+    background: -moz-linear-gradient(-90deg, #6db0e6 0%, #8fbadd 4%, #9ccbf1 15%, #9ccbf1 100%);
+    background: -webkit-linear-gradient(-90deg, #6db0e6 0%, #8fbadd 4%, #9ccbf1 15%, #9ccbf1 100%);
+    background: -ms-linear-gradient(to -90deg, #6db0e6 0%, #8fbadd 4%, #9ccbf1 15%, #9ccbf1 100%);
+    background: linear-gradient(to -90deg, #6db0e6 0%, #8fbadd 4%, #9ccbf1 15%, #9ccbf1 100%);
     border-radius: 3px 3px;
 }
+.announce{
+  margin: 0px 50px 0px 50px;
+  text-indent:0;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  -moz-border-radius:10px;
+  background:none repeat scroll 0 0 #9ccbf1;
+  border:1px solid #DDD;
+  padding:10px 10px 10px 20px
+}
+
 .announce p {
     padding: 10px;
     line-height: 26px;
