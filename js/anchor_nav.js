@@ -33,6 +33,7 @@ $(document).ready(function(){
             }
         }
     });*/
+    //***********添加导航栏功能************
     /**如果h2标签的个数大于5个并且不是手机设备则添加右侧导航栏*/
     if($('div.post h2').length > 5 && !isMobile.any()){
         var h2 = [],h3 = [],tmpl = '<ul>',h2index = 0;
@@ -124,4 +125,16 @@ $(document).ready(function(){
         //用js计算屏幕的高度
         $('#anchorIndex').css('max-height',$(window).height()-80);
     }
+    //***********************
+
+    //***********添加评论功能************
+    window.disqus_shortname = 'dolphinboy'; // required: replace example with your forum shortname
+    $('#disqus_container .comment').on('click',function(){
+        $(this).html('加载中...');
+        var that = this;
+        $.getScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()});
+    });
+    //***********************
+
+    //***********添加代码高亮功能************
 });
