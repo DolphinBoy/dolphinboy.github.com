@@ -405,6 +405,7 @@ header h3 {
   min-height: 595px;
   width: 100%;
   background: #fff;
+  padding: 5px;
 }
 
 footer {
