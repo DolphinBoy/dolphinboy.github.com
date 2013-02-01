@@ -130,7 +130,7 @@ $(document).ready(function(){
     //***********添加评论功能************
     window.disqus_shortname = 'dolphinboy'; // required: replace example with your forum shortname
     $('#disqus_container .comment').on('click',function(){
-        $(this).html('加载中...');
+        $(this).html('努力加载中...');
         var that = this;
         $.getScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()});
     });
