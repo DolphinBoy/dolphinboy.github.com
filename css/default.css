@@ -620,6 +620,7 @@ footer a:hover {
 #main_content p {
 
 }
+
 #aboutme h4 {
   color: #d5000d;
   font-size: 16px;
@@ -627,6 +628,14 @@ footer a:hover {
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: 18px;
   margin-top: 1.5em;
+}
+#aboutme div.contact li {
+  float: left;
+  
+}
+#aboutme div.contact img {
+  width: 100px;
+  height: 100px;
 }
 
 
