@@ -629,7 +629,7 @@ footer a:hover {
   margin-bottom: 18px;
   margin-top: 1.5em;
 }
-#aboutme ul,li {
+#aboutme li {
   list-style: none;
 }
 #aboutme div.contact li {
@@ -642,7 +642,7 @@ footer a:hover {
 }
 #aboutme p.tip {
   float: right;
-  margin-right: 20px;
+  margin-top: 2px;
 }
 
 
