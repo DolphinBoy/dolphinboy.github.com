@@ -629,13 +629,20 @@ footer a:hover {
   margin-bottom: 18px;
   margin-top: 1.5em;
 }
+#aboutme ul,li {
+  list-style: none;
+}
 #aboutme div.contact li {
   float: left;
-  
+
 }
 #aboutme div.contact img {
   width: 100px;
   height: 100px;
+}
+#aboutme p.tip {
+  float: right;
+  margin-right: 20px;
 }
 
 
