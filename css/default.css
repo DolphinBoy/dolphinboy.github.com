@@ -628,13 +628,14 @@ footer a:hover {
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: 18px;
   margin-top: 1.5em;
+  margin-left: 10px;
 }
 #aboutme li {
   list-style: none;
 }
 #aboutme div.contact li {
   float: left;
-
+  margin-left: 9px;
 }
 #aboutme div.contact img {
   width: 100px;
