@@ -118,6 +118,7 @@ a {color:#4A75B5;}
 a:hover {text-decoration:underline;color: #c5000c;}
 a.external {padding-right:13px;background:url('/images/icons.gif') no-repeat right 1px;}
 a.external:hover {background-position:right -14px;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font: bold 1.15em/1.5 verdana;text-shadow: rgba(50, 50, 50, .3) 1px 1px 3px;}
 h1,h1 a {font-size:32px;font-weight:bold;margin-top:20px;margin-bottom:32px;color:#000}
 h1 a:hover {text-decoration:none;}
 h2 {font-size: 22px;font-weight: 500;color: #303030;margin-bottom: 12px;} 
@@ -402,7 +403,7 @@ header h3 {
 
 #main_content {
   text-align: left;
-  min-height: 595px;
+  min-height: 460px;
   width: 100%;
   background: #fff;
   padding: 5px;
