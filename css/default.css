@@ -533,6 +533,8 @@ footer a:hover {
 .log em {
   font-size: 1.2em;
   margin-left: 50px;
+  line-height: 1.6em;
+  letter-spacing: 1px;
 }
 .log time {
 
