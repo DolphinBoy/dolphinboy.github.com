@@ -469,6 +469,9 @@ footer a:hover {
   color: #969120;
   margin-top: 1.1em;
 }
+.post .tip {
+  
+}
 
 /*--目录导航--*/
 #anchorIndex {position:fixed;top:150px;right:22px;width:200px;overflow:auto}
