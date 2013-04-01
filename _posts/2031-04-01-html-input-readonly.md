@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTML `<input>` 标签的 readonly 属性
+title: HTML中input标签的 readonly 属性
 description: 今天做项目的时候遇到这个奇怪的问题,查了查资料,写篇文章以做备忘
 category: blog
 tags: log

@@ -478,17 +478,15 @@ div.post  blockquote {
   font-size: 13px;
   width: 90%;
 }
-/**
+
 div.post p {
   line-height: 1.6em;
   letter-spacing: 1px;
-}*/
-
-div.post p a:link, div.post a:visited {
-    color: #3D81EE;
 }
+
 div.post p a:hover {
     color: #FF3300;
+    text-decoration: none;
 }
 div.post p a {
   border-bottom-width: 1px;
