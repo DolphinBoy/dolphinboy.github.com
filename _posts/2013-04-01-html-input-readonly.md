@@ -23,33 +23,30 @@ readonly 属性可与 `<input type="text">` 或 `<input type="password">` 配合
 	</form>
 ]]></script>
 #语法
-
-    <input readonly="value">
-
+<script type="syntaxhighlighter" class="brush: html"><![CDATA[
+	<input readonly="value">
+]]></script>
 ##值描述
 >readonly	把输入字段设置为只读
 
 #JavaScript操作
 在JS中readonly属性比较奇怪，直接创建一个对象，给该对象赋值readonly属性不能够向HTML中一样使用下面的方式：
-
+<script type="syntaxhighlighter" class="brush: js"><![CDATA[
     var nameInput = document.createElement("input");
     nameInput.type = "text";
     nameInput.value = "ttttt";
     nameInput.id = "xy";
     nameInput.readonly="readonly";
-
+]]></script>
 这样创建的对象并不是只读的,当然也不能这样:
-
+<script type="syntaxhighlighter" class="brush: js"><![CDATA[
     var nameInput = document.getElementById("name");
     nameInput.readonly = "readonly";
-
+]]></script>
 正确的写法是:
-
+<script type="syntaxhighlighter" class="brush: js"><![CDATA[
     nameInput.readonly = true;
-
-或者
-
-    nameInput.readonly = true;
-
+    nameInput.readonly = false;
+]]></script>
 #结语
 好多标签都有一些特殊的情况,看来以后要慢慢学习积累经验,至于深层原因还没来得及研究,如果有大虾路过,请指教...

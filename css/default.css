@@ -402,6 +402,7 @@ header h3 {
 }
 
 #main_content {
+  font-family: verdana, "Microsoft Yahei","Microsoft Jhenghei",STHeiti,PMingLiU,Simsun;
   text-align: left;
   min-height: 460px;
   width: 100%;
@@ -429,7 +430,6 @@ footer a:hover {
 
 /* Post Layout Style */
 div.post {
-  font-family: verdana, "Microsoft Yahei","Microsoft Jhenghei",STHeiti,PMingLiU,Simsun;
   padding: 50px;
 }
 div.post .title {
@@ -505,7 +505,7 @@ div.post table tbody tr:nth-child(even) {
   -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;
   box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
 }
-div.post table  th {
+div.post table th {
   text-align: left;
   text-shadow: 0 1px 0 rgba(255,255,255,.5);
   border-bottom: 1px solid #ccc;
@@ -519,22 +519,22 @@ div.post table  th {
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f5f5f5, endColorstr=#eeeeee);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#f5f5f5, endColorstr=#eeeeee)";
 }
-div.post table  th:first-child {
+div.post table th:first-child {
   -moz-border-radius: 6px 0 0 0;
   -webkit-border-radius: 6px 0 0 0;
   border-radius: 6px 0 0 0;
 }
-div.post table  th:last-child {
+div.post table th:last-child {
   -moz-border-radius: 0 6px 0 0;
   -webkit-border-radius: 0 6px 0 0;
   border-radius: 0 6px 0 0;
 }
-div.post table  tfoot td {
+div.post table tfoot td {
   border-bottom: 0;
   border-top: 1px solid #fff;
   background-color: #f1f1f1;
 }
-div.post table  tfoot td:first-child {
+div.post table tfoot td:first-child {
   -moz-border-radius: 0 0 0 6px;
   -webkit-border-radius: 0 0 0 6px;
   border-radius: 0 0 0 6px;
@@ -707,6 +707,7 @@ div.post table tfoot td:last-child {
   margin-left: 20px;
 }
 #aboutme div.contact li {
+  list-style: none;
   float: left;
   margin-left: 9px;
 }
