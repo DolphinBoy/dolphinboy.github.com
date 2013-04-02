@@ -4,8 +4,10 @@ layout: page
 javascript:
     - /js/jquery-1.9.0.min.js
     - /js/anchor_nav.js
+    - http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js
+    - http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js
 css:
-    - /css/pygment_trac.css
+    - http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css
 ---
 <div class="post">
     <h1 class="title">{{ page.title }}</h1>
@@ -33,7 +35,8 @@ css:
     <a class="jiathis_counter_style"></a>
 </div>
 <script type="text/javascript">
-var jiathis_config = {data_track_clickback:'true'};
+    SyntaxHighlighter.all()
+    var jiathis_config = {data_track_clickback:'true'};
 </script>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1356107616618126" charset="utf-8"></script>
 <!-- JiaThis Button END -->
