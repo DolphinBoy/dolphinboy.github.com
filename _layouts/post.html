@@ -1,13 +1,12 @@
 ---
 layout: page
-
+css:
+    - http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css
 javascript:
     - /js/jquery-1.9.0.min.js
     - /js/anchor_nav.js
     - http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js
-    - http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js
-css:
-    - http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css
+    - http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js    
 ---
 <div class="post">
     <h1 class="title">{{ page.title }}</h1>
@@ -36,9 +35,6 @@ css:
 </div>
 
 <script type="text/javascript">
-    $(function(){
-        SyntaxHighlighter.all();
-    });
     var jiathis_config = {data_track_clickback:'true'};
 </script>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1356107616618126" charset="utf-8"></script>
