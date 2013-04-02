@@ -470,15 +470,17 @@ div.post h3 {
   color: #969120;
   margin-top: 1.1em;
 }
-div.post  blockquote {
+div.post blockquote {
   background: #FFFFFF url('../images/blockquote.png') top left no-repeat;
   margin: 0 auto;
   padding: 0 0 0 45px;
   color: #666;
-  font-size: 13px;
+  font-size: 12px;
   width: 90%;
 }
-
+div.post blockquote p {
+  padding-top: 10px;
+}
 div.post p {
   line-height: 1.6em;
   letter-spacing: 1px;

@@ -26,7 +26,7 @@ readonly 属性可与 `<input type="text">` 或 `<input type="password">` 配合
 
     <input readonly="value">
 
-##值	描述
+##值描述
 >readonly	把输入字段设置为只读
 
 #JavaScript操作
