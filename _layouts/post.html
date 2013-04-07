@@ -1,7 +1,7 @@
 ---
 layout: page
 css:
-    - http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css
+    - http://alexgorbatchev.com/pub/sh/current/styles/shThemeRDark.css
 javascript:
     - /js/anchor_nav.js
     - http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js
@@ -35,6 +35,10 @@ javascript:
 
 <script type="text/javascript">
     $(function(){
+        SyntaxHighlighter.autoloader(
+            'html  http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js',
+            'javascript  http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js'
+        );
         SyntaxHighlighter.all();
     });
     var jiathis_config = {data_track_clickback:'true'};
