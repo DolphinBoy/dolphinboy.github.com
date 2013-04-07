@@ -71,7 +71,7 @@ dl{ margin-bottom: 18px;}
 dt{font-weight: bold;}
 dd{margin:0 0 0 9px;padding:0;}
 
-ul li {list-style: disc inside;padding-left: 20px;}
+ul li {list-style: disc inside;padding-left: 5px 0px 5px 20px;}
 ol li {list-style: decimal inside;padding-left: 3px;}
 ul, ol, dl {margin-bottom: 20px;}
 ul ul, ul ol,ol ol, ol ul {margin-bottom: 0;}
@@ -407,6 +407,8 @@ header h3 {
   width: 100%;
   background: #fff;
   padding: 5px;
+  line-height: 1.6em;
+  letter-spacing: 1px;
 }
 
 footer {
@@ -481,10 +483,6 @@ div.post blockquote {
 div.post blockquote p {
   padding-top: 10px;
 }
-div.post p {
-  line-height: 1.6em;
-  letter-spacing: 1px;
-}
 
 div.post p a:hover {
     color: #FF3300;
@@ -547,7 +545,7 @@ div.post table tfoot td:last-child {
 /**表格美化-End*/
 
 /*--目录导航--*/
-#anchorIndex {position:fixed;top:150px;right:22px;width:200px;overflow:auto}
+#anchorIndex {position:fixed;top:150px;right:22px;width:200px;overflow:auto;font-family: verdana, "Microsoft Yahei","Microsoft Jhenghei",STHeiti,PMingLiU,Simsun;}
 #anchorIndex a {display:block}
 #anchorIndex a:hover {text-decoration:none;}
 #anchorIndex ul li {list-style:none;font-size:12px;margin-bottom:5px;word-wrap:break-word;padding-left:10px;}
@@ -685,6 +683,7 @@ div.post table tfoot td:last-child {
   height: 50px;
   padding: 5px;
   font-style: italic;
+  width: 450px;
 }
 
 #disqus_container {

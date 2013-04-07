@@ -1,7 +1,7 @@
 ---
 layout: post
-title: HelloWord
-description: 这是我的第一篇自己博客上的博文哦！
+title: HelloWord!
+description: 关于建立自己的博客,我有话要说!
 category: blog
 tags: other
 keywords: HelloWord,世界你好,第一篇博文

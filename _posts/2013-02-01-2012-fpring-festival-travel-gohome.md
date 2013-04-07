@@ -32,10 +32,11 @@ keywords: 2012,春节,回家,路线
 下一站：漯河火车站  
 乘车：L426(3:29发车)  
 途径：
->[赤壁站](http://j.map.baidu.com/iFoTh): 16:07  
-[咸宁站](http://j.map.baidu.com/FPoTh): 16:36  
-[信阳站](http://j.map.baidu.com/FPoTh): 21:12  
-[驻马店站](http://j.map.baidu.com/vg6Th): 22:36
+
+- [赤壁站](http://j.map.baidu.com/iFoTh): 16:07  
+- [咸宁站](http://j.map.baidu.com/FPoTh): 16:36  
+- [信阳站](http://j.map.baidu.com/FPoTh): 21:12  
+- [驻马店站](http://j.map.baidu.com/vg6Th): 22:36
 
 ###[漯河火车站](http://j.map.baidu.com/176Th)  
 到达：漯河市火车站  
@@ -56,12 +57,12 @@ keywords: 2012,春节,回家,路线
 
 
 ##数据
->历时：40小时左右  
-历程：1500公里左右
-省际：4个(广东，湖南，湖北，河南)
-车票：2张  
-车费：￥253<n<400  
-食宿：￥100<n<200
+- 历时：40小时左右  
+- 历程：1500公里左右
+- 省际：4个(广东，湖南，湖北，河南)
+- 车票：2张  
+- 车费：￥253<n<400  
+- 食宿：￥100<n<200
 
 
 ##地图
