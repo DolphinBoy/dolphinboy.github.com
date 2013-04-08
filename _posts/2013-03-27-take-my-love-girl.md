@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Take My Love Gril!
-description: 寻找我的爱,女朋友,take-my-love-gril
-title: Take My Love Gril!
+title: Take My Love Girl!
+description: 寻找我的爱,女朋友,take-my-love-girl
+title: Take My Love Girl!
 description: 五一放假去接女朋友并且顺便带回家的计划
 category: blog
 tags: life
-keywords: 寻找我的爱,女朋友,take-my-love-gril
+keywords: 寻找我的爱,女朋友,take-my-love-girl
 ---
 
 <table>

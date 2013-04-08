@@ -408,7 +408,7 @@ header h3 {
   width: 100%;
   background: #fff;
   padding: 5px;
-  line-height: 1.6em;
+  line-height: 1.2em;
   letter-spacing: 1px;
 }
 
@@ -657,7 +657,7 @@ div.post table tfoot td:last-child {
 .article {
   float: left;
   clear: left;
-  height: 65px;
+  height: 80px;
   margin: 0 0;
   padding-top: 10px;
   border-bottom: 1px dotted #d9d9d9;
@@ -665,8 +665,11 @@ div.post table tfoot td:last-child {
 .article_title {
   float: left;
   width: 200px;
-  height: 50px;
+  height: 70px;
   padding: 5px;
+}
+.article_title .a {
+  padding: 0px;
 }
 .article_title .date {
   margin-bottom: 5px;
