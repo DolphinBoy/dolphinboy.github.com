@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HelloWord!
+title: Hello World!
 description: 关于建立自己的博客,我有话要说!
 category: blog
 tags: other

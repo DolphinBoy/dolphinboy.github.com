@@ -87,7 +87,6 @@ footer, header, hgroup, menu, nav, section {
 }
 
  /* 清理浮动 */
-
 .clearfix:before {content:"";display:table;}
 .clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;overflow:hidden;}
 .clearfix {display: inline-block;}
@@ -357,7 +356,8 @@ a.but {
   max-width: 100%;
 }
 #container .inner .nav {
-  height: 20px;
+  height: 15px;
+  margin-right: 20px;
 }
 #container .inner .nav a{
   margin-right: 10px;
@@ -404,7 +404,7 @@ header h3 {
 #main_content {
   font-family: verdana, "Microsoft Yahei","Microsoft Jhenghei",STHeiti,PMingLiU,Simsun;
   text-align: left;
-  min-height: 460px;
+  min-height: 800px;
   width: 100%;
   background: #fff;
   padding: 5px;
@@ -420,6 +420,7 @@ footer {
   font-size: 13px;
   text-align: right;
   color: #aaa;
+  clear: both;
 }
 
 footer a {
