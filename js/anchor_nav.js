@@ -35,7 +35,7 @@ $(document).ready(function(){
     });*/
     //***********添加导航栏功能************
     /**如果h2标签的个数大于5个并且不是手机设备则添加右侧导航栏*/
-    if($('div.post h2').length > 5 && !isMobile.any()){
+    if($('div.post h2').length > 10 && !isMobile.any()){
         var h2 = [],h3 = [],tmpl = '<ul>',h2index = 0;
         var findScrollableElement = function(els){  //搜索滚动节点
             for(var i = 0, argLength = arguments.length; i < argLength; i++){
