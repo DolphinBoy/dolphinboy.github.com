@@ -1,11 +1,11 @@
 ---
 layout: page
 css:
-    - /syntaxhighlighter_3.0.83/styles/shThemeRDark.css
+    - /js/syntaxhighlighter_3.0.83/styles/shThemeRDark.css
 javascript:
     - /js/anchor_nav.js
-    - /syntaxhighlighter_3.0.83/scripts/shCore.js
-    - /syntaxhighlighter_3.0.83/scripts/shAutoloader.js    
+    - /js/syntaxhighlighter_3.0.83/scripts/shCore.js
+    - /js/syntaxhighlighter_3.0.83/scripts/shAutoloader.js    
 ---
 <div class="post">
     <h1 class="title">{{ page.title }}</h1>
@@ -65,7 +65,7 @@ function path()
       result = [] ;
        
   for(var i = 0; i < args.length; i++)
-      result.push(args[i].replace('@', '/syntaxhighlighter_3.0.83/scripts/'));
+      result.push(args[i].replace('@', '/js/syntaxhighlighter_3.0.83/scripts/'));
        
   return result;
 };
