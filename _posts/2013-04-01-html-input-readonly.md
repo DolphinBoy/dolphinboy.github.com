@@ -3,7 +3,7 @@ layout: post
 title: HTML中input标签的readonly属性
 description: 今天做项目的时候遇到这个奇怪的问题,查了查资料写篇文章以做备忘.
 category: blog
-tags: log
+tags: web,html,JavaScript
 keywords: HTML,input,readonly
 ---
 

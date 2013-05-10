@@ -2,7 +2,7 @@
 layout: post
 title: NULL IS NOT NULL
 description: 其实NULL认识你,但你不一定真的认识NULL.
-category: draft
+category: blog
 tags: others
 keywords: null,empty
 ---
@@ -116,8 +116,8 @@ console.log(null != null);  //为假
 感觉自己总结的并不是很好,有时间还要继续深入,也请各位读者多提建议,可以分享一下自己的理解.
 
 ###参考
-Java：http:  
-//lavasoft.blog.51cto.com/62575/79243  
+Java：  
+http://lavasoft.blog.51cto.com/62575/79243  
 JavaScript:  
 http://www.cnblogs.com/meil/archive/2006/12/01/578868.html  
 http://www.cnblogs.com/qiantuwuliang/archive/2010/01/12/1645302.html  

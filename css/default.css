@@ -564,7 +564,7 @@ div.post table tfoot td:last-child {
     background: linear-gradient(to -90deg, #6db0e6 0%, #8fbadd 4%, #9ccbf1 15%, #9ccbf1 100%);
     border-radius: 3px 3px;
 }
-.announce{
+.announce {
   margin: 0px 50px 0px 50px;
   text-indent:0;
   -webkit-border-radius:10px;
