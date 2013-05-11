@@ -3,7 +3,7 @@ layout: post
 title: HTML中input标签的readonly属性
 description: 今天做项目的时候遇到这个奇怪的问题,查了查资料写篇文章以做备忘.
 category: blog
-tags: log
+tags: web,html,JavaScript
 keywords: HTML,input,readonly
 ---
 
@@ -27,7 +27,7 @@ readonly 属性可与 `<input type="text">` 或 `<input type="password">` 配合
 	<input readonly="value">
 ]]></script>
 ##值描述
->readonly	把输入字段设置为只读
+readonly:    把输入字段设置为只读
 
 ##JavaScript操作
 在JS中readonly属性比较奇怪，直接创建一个对象，给该对象赋值readonly属性不能够向HTML中一样使用下面的方式：
