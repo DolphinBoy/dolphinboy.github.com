@@ -21,7 +21,7 @@ keywords: 数据库主键设计,PRIMARY KEY,数据库
 ###联合主键
 如果对多列定义了 PRIMARY KEY 约束，则一列中的值可能会重复，但来自 PRIMARY KEY 约束定义中所有列的任何值组合必须唯一。
 如下图所示，Purchasing.ProductVendor 表中的 ProductID 和 VendorID 列构成了针对此表的复合 PRIMARY KEY 约束。这确保了 ProductID 和 VendorID 的组合是唯一的。  
-![联合主键](http://aaa)  
+![联合主键](resources/composite-keys.png)  
 当进行联接时，PRIMARY KEY 约束将一个表与另一个表关联。例如，若要确定哪些供应商供应哪些产品，可以在 Purchasing.Vendor 表、Production.Product 表和 Purchasing.ProductVendor 表之间使用一个三向联接。因为 ProductVendor 包含 ProductID 和 VendorID 列，所以可通过与 ProductVendor 的联系来访问 Product 表和 Vendor 表。
 
 ##主键的特性

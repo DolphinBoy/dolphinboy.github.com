@@ -13,7 +13,7 @@ readonly 属性规定输入字段为只读。
 readonly 属性可以防止用户对值进行修改，直到满足某些条件为止（比如选中了一个复选框）。然后，需要使用 JavaScript 消除 readonly 值，将输入字段切换到可编辑状态。
 readonly 属性可与 `<input type="text">` 或 `<input type="password">` 配合使用。
 
-##实例
+##示例
 带有两个文本字段和一个提交按钮的 HTML 表单：
 <script type="syntaxhighlighter" class="brush: html; toolbar: false;"><![CDATA[
 	<form action="/xxx" method="get">
