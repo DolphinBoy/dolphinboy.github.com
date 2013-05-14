@@ -19,7 +19,9 @@ keywords: MongoDB,安装,翻译
 在Windows系统中MongoDB有三个builds：
 
 - MongoDB的Windows Server 2008 R2版(即2008R2)只运行在Windows Server 2008 R2,Windows 7 64位或者更新版本的Windows。这个构建利用最近的增强Windows平台并且不能使用老版本的Windows。
+
 - MongoDB的Windows 64位版本运行在比Windows XP更新的64位版本的Windows系统中,包括Windows Server 2008 R2和Windows 7 64位。
+
 - MongoDB的Windows 32位版本运行在任何比Windows XP更新的32位版本的Windows中。32位版本的MongoDB只是用于旧系统和用于测试和开发系统。
 
 从2.2版中以后MongoDB不再支持Windows XP。请尽量使用使用最新的Windows系统来运行更多最近发布的MongoDB。
@@ -149,6 +151,11 @@ MongoDB需要[数据文件夹](http://docs.mongodb.org/manual/reference/glossary
 2. 安装服务  
 `D:\mongodb-win32-i386-2.4.3\bin>mongod --config E:\Database\mongodb\mongod.cfg --install`
 
+如果执行这个命令有以下提示：
+>Error connecting to the Service Control Manager
+
+说明你没有管理员权限来调用服务控制器，需要以管理员身份来运行命令提示符。
+
 3. 启动服务  
 `net start mongodg`   
 
@@ -163,6 +170,12 @@ Mongo DB 服务正在启动成功.
 
 如果在删除服务之后，Windows系统服务中仍然可以看到MongoDB服务，则可以手动强制删除服务：  
 `sc delete "MongoDB"`
+
+如果在反复启动停止之后出现以下提示：
+>Service can be started from the command line via 'net start "MongoDB"'.
+
+说明是数据库被锁定，删除数据库目录下面的 mongod.lock 文件即可
+
 
 OK,可以了!其他基本没有什么问题。
 
