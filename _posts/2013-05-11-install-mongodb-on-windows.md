@@ -148,6 +148,12 @@ MongoDB需要[数据文件夹](http://docs.mongodb.org/manual/reference/glossary
 		dbpath=E:\Database\mongodb
 		logpath=E:\Database\mongodb\log\mongo.log
 
+*注意：  
+在`2.2.4`以及以前的版本里面应该是这样的:*
+
+		--dbpath=E:\Database\mongodb
+		--logpath=E:\Database\mongodb\log\mongo.log
+
 2. 安装服务  
 `D:\mongodb-win32-i386-2.4.3\bin>mongod --config E:\Database\mongodb\mongod.cfg --install`
 
