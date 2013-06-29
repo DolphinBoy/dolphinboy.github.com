@@ -1,4 +1,11 @@
-
+---
+layout: post
+title: java.lang.exception系列
+description: 主要是对java.lang下的错误进行收集，以做备忘。
+category: blog
+tags: java
+keywords:java,lang,exception
+---
 
 	2013-06-28 10:06:17.473:WARN::handle failed
 	java.lang.IllegalArgumentException: !utf8
