@@ -69,7 +69,7 @@ console:
 
 所以`null == null`为真，这也是Set只能有一个 `null` 和Map的key只能有一个 `null` 的原因了。
 
-###JavaScript中的`null`:
+###JavaScript中的null:
 null 是一种特殊的 Object  
 
 		console.log(typeof(null));
