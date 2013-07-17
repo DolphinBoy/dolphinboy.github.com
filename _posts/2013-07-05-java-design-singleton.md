@@ -16,8 +16,9 @@ keywords: design,singleton
 	public class Singleton_1 {
 		private static Singleton_1 instance;  //私有静态变量
 		private Singleton_1 (){}  //为什么要加上这个默认构造方法呢?
-		// 这个构造方法是默认的, 如果不加上这个默认的构造方法, 那么每次调用 `Singleton_1 s = new Singleton_1()` 的时候每次都会实例化一个 `Singleton_1` 对象, 这就不叫单例了.
-		
+		// 1.这个构造方法是默认的, 如果不加上这个默认的构造方法, 那么每次调用 `Singleton_1 s = new Singleton_1()` 的时候每次都会实例化一个 `Singleton_1` 对象, 这就不叫单例了.
+		// 2.私有属性隐藏了构造方法，所以当你实例化时必须要调用getInstance这个方法
+
 		 public static Singleton_1 getInstance() {  
 			 if (instance == null) {  //判断内存中是否存在这样一个对象, 如果存在就之直接返回, 不存在就实例化一个
 				 instance = new Singleton_1();  
@@ -187,7 +188,7 @@ keywords: design,singleton
 
 ###思考
 单例都用在声明情况下?  
-1. 例如像JDBC一类的配置文件, 肯定要有一个类去加载, 然后放到内存中, 在整个服务器的生命周期内一般不会发生变化, 所以这样的类大部分用单例来实现, Spring中就大量使用了单例模式.  
+1. 例如像JDBC一类的配置文件, 肯定要有一个类去加载, 然后放到内存中, 在整个服务器的生命周期内只需要一个这样的对象，也不需要经常的改变, 所以这样的类大部分用单例来实现, Spring中就大量使用了单例模式,并且Spring推荐将所有业务逻辑组件、DAO组件、数据源组件等配制成单例模式，还有就是Hibernate中的`SessionFactory`也是一个比较熟悉的单例.  
 2. 缓存、日志对象、打印机等, 例如有多个打印机, 但是你只想打印一份资料, 总不能每个打印机都打印一份.
 
 单例的作用范围是什么?  

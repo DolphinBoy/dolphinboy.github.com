@@ -31,7 +31,18 @@ keywords:java,lang,exception
 
 	-Dorg.eclipse.jetty.util.URI.charset=GBK
 
-
 ----------
+
+	org.springframework.beans.factory.CannotLoadBeanClassException: Error loading class [com.skysz.app.cmcs.ynt.iface.cpmisexev.dao.hibernate3.OdfToOrgYntDaoImpl] for bean with name 'odfToOrgYntDao' defined in class path resource [spring-ynt.xml]: problem with class file or dependent class; nested exception is java.lang.UnsupportedClassVersionError: Bad version number in .class file
+
+这个错误是因为你使用的JDK和你的编译级别不同，如图：  
+你使用的JDK：  
+![java-build-path](http://dolphinboy.me/resources/java-build-path.png)
+
+你的编译级别：  
+![java-compiler](http://dolphinboy.me/resources/java-compiler.png)
+
+>注意：如果你使用了Maven那么，如果你的父项目和你的子项目使用的JDK不同，那么每次同步代码之后你可能都要重新编译一下项目，有时候重新编译也没用，那你就干脆重启一下Eclipse吧，有可能会莫名其妙的好了。
+
 
 本文持续更新中...
