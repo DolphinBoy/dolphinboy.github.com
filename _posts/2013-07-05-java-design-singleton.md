@@ -3,7 +3,7 @@ layout: post
 title: 单例设计模式思考
 description: 单例设计是最简单, 也是最常见的设计模式, 但简单的单例其实也不简单.
 category: blog
-tags: life
+tags: java,design
 keywords: design,singleton
 ---
 
