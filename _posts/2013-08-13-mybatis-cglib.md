@@ -7,7 +7,6 @@ tags: mybatis,spring
 keywords:mybatis,cglib,asm,spring
 ---
 
-
 ###错误
 
 	2013-08-12 14:33:37.672:WARN::Nested in org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in URL [file:/E:/cloudwave-core/src/main/webapp/WEB-INF/classes/applicationContext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis-config.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.IllegalStateException: Cannot enable lazy loading because CGLIB is not available. Add CGLIB to your classpath.:java.lang.IncompatibleClassChangeError: class net.sf.cglib.core.DebuggingClassWriter has interface org.objectweb.asm.ClassVisitor as super class
