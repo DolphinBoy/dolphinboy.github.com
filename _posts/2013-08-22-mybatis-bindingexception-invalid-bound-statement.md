@@ -3,12 +3,11 @@ layout: post
 title: Mybatis BindingException Invalid bound statement.
 description: 使用mybatis时因为一些命名问题导致的异常，在此记录一下原因以及简单的分析.
 category: blog
-tags: mybatis,spring
+tags: mybatis
 keywords:mybatis,spring
 ---
 
-
-###主要异常
+###异常摘要
 
 	org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.cloudwave.fwapp.module.mapper.UserMapper.findByEmail
 
