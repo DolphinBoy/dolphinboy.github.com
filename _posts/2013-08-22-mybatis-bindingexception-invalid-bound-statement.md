@@ -7,6 +7,7 @@ tags: mybatis,spring
 keywords:mybatis,spring
 ---
 
+
 ###主要异常
 
 	org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.cloudwave.fwapp.module.mapper.UserMapper.findByEmail

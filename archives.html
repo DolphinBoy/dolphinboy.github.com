@@ -7,8 +7,8 @@ keywords: 博文列表,文章列表
 <h3>Article List&nbsp;&nbsp;<span>({{ site.categories.blog | size }} posts.)</span></h3>
 
 <section id="article_list">
-	{% capture line_year %}{{ 'now' | date: '%Y' }}{% endcapture %}
-	<div class="archive_year">
+	{% capture line_year %}{{ site.time | date: '%Y' }}{% endcapture %}
+	<div class="archive_year clearfix">
 		<p class="year">{{ line_year }}</p>
 		<div class="article_item">
 	{% for post in site.categories.blog %}
