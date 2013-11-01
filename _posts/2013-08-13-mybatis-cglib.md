@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Mybatis 的 CGLIB jar包问题.
+title: Mybatis下GLIB的jar包问题.
 description: 整合SpringMVC和Mybatis时因为jar包问题导致的出错, 在此记录一下.
 category: blog
 tags: mybatis
 keywords:mybatis,cglib,asm,spring
 ---
+
 
 ###异常摘要
 
