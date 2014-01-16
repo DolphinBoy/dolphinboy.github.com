@@ -33,6 +33,10 @@ keywords:java,lang,exception
 
 ----------
 
+	Caused by: java.lang.UnsupportedClassVersionError: www/kobe/pojo/Salesman : Unsupported major.minor version 51.0 (unable to load class www.kobe.pojo.Salesman)
+
+或者
+
 	org.springframework.beans.factory.CannotLoadBeanClassException: Error loading class [com.skysz.app.cmcs.ynt.iface.cpmisexev.dao.hibernate3.OdfToOrgYntDaoImpl] for bean with name 'odfToOrgYntDao' defined in class path resource [spring-ynt.xml]: problem with class file or dependent class; nested exception is java.lang.UnsupportedClassVersionError: Bad version number in .class file
 
 这个错误是因为你使用的JDK和你的编译级别不同，如图：  
