@@ -1,7 +1,7 @@
 ---
 layout: post
-title:` default-lazy-init`和`SpringUtil`
-description: `default-lazy-init`导致`SpringUtil`不被实例化!
+title:default-lazy-init和SpringUtil
+description: default-lazy-init导致SpringUtil不被实例化!
 category: blog
 tags: javaee
 keywords: SpringUtil,default-lazy-init
