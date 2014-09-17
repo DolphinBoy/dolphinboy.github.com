@@ -1,7 +1,7 @@
 ---
 layout: post
 title:Android 开发Tips
-description: `default-lazy-init`导致`SpringUtil`不被实例化!
+description: 介绍Android开发时的注意点!
 category: blog
 tags: Android
 keywords: Android,App,性能与安全
@@ -30,3 +30,5 @@ keywords: Android,App,性能与安全
 
 
 8、Application的生命周期就是进程的生命周期。只有进程被干掉时，Application才会销毁。哪怕是没有Activity、Service在运行，Application也会存在。所以，为了减少内存压力，尽量不要在Application里面引用大对象、Context等。
+
+转载:http://blog.csdn.net/a345017062/article/details/17536043
